@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BankSystemBusiness",
+    "\\BankSystemDataAccess",
+    "\\BankSystemDesktopUI",
+    "\\BankSystemDesktopUI\\BankSystem"
+  ],
+  "SelectedNode": "\\BankSystemDesktopUI\\BankSystem\\BankSystemDesktopUI.csproj",
+  "PreviewInSolutionExplorer": false
+}

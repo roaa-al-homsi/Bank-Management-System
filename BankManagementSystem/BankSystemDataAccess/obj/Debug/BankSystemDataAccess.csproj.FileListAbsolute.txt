@@ -1,0 +1,12 @@
+C:\Users\Ruaa\source\repos\BankSystemDataAccess\bin\Debug\BankSystemDataAccess.dll
+C:\Users\Ruaa\source\repos\BankSystemDataAccess\bin\Debug\BankSystemDataAccess.pdb
+C:\Users\Ruaa\source\repos\BankSystemDataAccess\obj\Debug\BankSystemDataAccess.csproj.AssemblyReference.cache
+C:\Users\Ruaa\source\repos\BankSystemDataAccess\obj\Debug\BankSystemDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Ruaa\source\repos\BankSystemDataAccess\obj\Debug\BankSystemDataAccess.dll
+C:\Users\Ruaa\source\repos\BankSystemDataAccess\obj\Debug\BankSystemDataAccess.pdb
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDataAccess\bin\Debug\BankSystemDataAccess.dll
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDataAccess\bin\Debug\BankSystemDataAccess.pdb
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDataAccess\obj\Debug\BankSystemDataAccess.csproj.AssemblyReference.cache
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDataAccess\obj\Debug\BankSystemDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDataAccess\obj\Debug\BankSystemDataAccess.dll
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDataAccess\obj\Debug\BankSystemDataAccess.pdb
