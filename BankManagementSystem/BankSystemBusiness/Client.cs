@@ -171,6 +171,7 @@ namespace BankSystemBusiness
         }
         public bool Deposit(float AmountDeposit)
         {
+            this.Salary += AmountDeposit;
             return ClientData.Deposit(AmountDeposit, this.AccountNumber);
         }
 
@@ -186,6 +187,14 @@ namespace BankSystemBusiness
             }
         }
 
+        private void _RegisterTransfers(float Amount, Client ClientDestination, string UserName)
+        {
+            DateTime dateTime = DateTime.Now;
+
+            ClientData.RegisterTransfers(dateTime, this.AccountNumber, ClientDestination.AccountNumber, Amount, this.Salary, ClientDestination.Salary, UserName);
+
+        }
+
         public bool Transfer(float Amount, Client DestinationClient)
         {
             if (Amount > this.Salary)
@@ -194,13 +203,11 @@ namespace BankSystemBusiness
             }
             Withdraw(Amount);
             DestinationClient.Deposit(Amount);
+            _RegisterTransfers(Amount, DestinationClient, "Roaa");
             return true; ;
         }
 
-        public void test()
-        {
 
-        }
 
 
 

@@ -344,7 +344,35 @@ namespace BankSystemDataAccess
             return RowsAffected > 0;
         }
 
+        static public bool RegisterTransfers(DateTime dateTime, string SourceAccountNumber, string DestinationAccountNumber, float Amount,
+            double SalarySourceAccount, double SalaryDestinationAccount, string UserName)
+        {
 
+            int RowsAffected = 0;
+            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
+            string query = @"insert into Transfers ([Date Time],[Source Account],[Destination Account],Amount,[Salary source account],[Salary destination account],UserName) 
+                           values (@dateTime,@SourceAccountNumber,@DestinationAccountNumber,@Amount,@SalarySourceAccount,@SalaryDestinationAccount,@UserName);";
+
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@dateTime", dateTime);
+            command.Parameters.AddWithValue("@SourceAccountNumber", SourceAccountNumber);
+            command.Parameters.AddWithValue("@DestinationAccountNumber", DestinationAccountNumber);
+            command.Parameters.AddWithValue("@Amount", Amount);
+            command.Parameters.AddWithValue("@SalarySourceAccount", SalarySourceAccount);
+            command.Parameters.AddWithValue("@SalaryDestinationAccount", SalaryDestinationAccount);
+            command.Parameters.AddWithValue("@UserName", UserName);
+
+            try
+            {
+                connection.Open();
+                RowsAffected = command.ExecuteNonQuery();
+
+            }
+            catch (Exception ex) { }
+            finally { connection.Close(); }
+            return RowsAffected > 0;
+
+        }
 
 
 

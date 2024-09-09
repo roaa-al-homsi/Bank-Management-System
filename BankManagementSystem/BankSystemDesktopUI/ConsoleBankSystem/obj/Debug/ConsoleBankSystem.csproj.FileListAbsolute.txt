@@ -1,0 +1,12 @@
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\ConsoleBankSystem\bin\Debug\ConsoleBankSystem.exe.config
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\ConsoleBankSystem\bin\Debug\ConsoleBankSystem.exe
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\ConsoleBankSystem\bin\Debug\ConsoleBankSystem.pdb
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\ConsoleBankSystem\bin\Debug\BankSystemBusiness.dll
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\ConsoleBankSystem\bin\Debug\BankSystemDataAccess.dll
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\ConsoleBankSystem\bin\Debug\BankSystemBusiness.pdb
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\ConsoleBankSystem\bin\Debug\BankSystemDataAccess.pdb
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\ConsoleBankSystem\obj\Debug\ConsoleBankSystem.csproj.AssemblyReference.cache
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\ConsoleBankSystem\obj\Debug\ConsoleBankSystem.csproj.CoreCompileInputs.cache
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\ConsoleBankSystem\obj\Debug\ConsoleB.9FBBFFC1.Up2Date
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\ConsoleBankSystem\obj\Debug\ConsoleBankSystem.exe
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\ConsoleBankSystem\obj\Debug\ConsoleBankSystem.pdb
