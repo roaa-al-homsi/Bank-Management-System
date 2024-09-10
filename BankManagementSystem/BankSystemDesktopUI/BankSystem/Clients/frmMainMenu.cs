@@ -1,4 +1,5 @@
-﻿using BankSystem.Users;
+﻿using BankSystem.Login;
+using BankSystem.Users;
 using Guna.UI2.WinForms;
 using System;
 using System.Drawing;
@@ -9,6 +10,7 @@ namespace BankSystem.Clients
 {
     public partial class frmMainMenu : Form
     {
+
         private Guna2Button _currentButton;
         private Form _activeForm;
 
@@ -137,6 +139,17 @@ namespace BankSystem.Clients
         {
             labUserName.Text = GlobalVariables.CurrentUser.UserName;
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.Show();
+
+        }
+
+
+
     }
 }
 

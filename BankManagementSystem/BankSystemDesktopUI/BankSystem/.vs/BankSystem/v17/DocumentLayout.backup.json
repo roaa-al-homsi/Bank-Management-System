@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\bankmanagementsystem\\banksystemdesktopui\\banksystem\\clients\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|solutionrelative:clients\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\bankmanagementsystem\\banksystemdesktopui\\banksystem\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,8 +15,8 @@
       "RelativeMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|solutionrelative:clients\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\clients\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|solutionrelative:clients\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2068D7C4-6F26-4E30-ABF7-04D568877499}|..\\SystemGlobalVariables\\SystemGlobalVariables.csproj|c:\\users\\ruaa\\source\\repos\\bankmanagementsystem\\banksystemdesktopui\\systemglobalvariables\\globalvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -32,7 +32,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 340,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -48,7 +48,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "frmLogin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Login\\frmLogin.cs",
               "RelativeDocumentMoniker": "Login\\frmLogin.cs",
@@ -66,20 +66,20 @@
               "RelativeDocumentMoniker": "Login\\frmLogin.cs",
               "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Login\\frmLogin.cs",
               "RelativeToolTip": "Login\\frmLogin.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAArwEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAACEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T19:37:21.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "frmMainMenu.cs",
               "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Clients\\frmMainMenu.cs",
               "RelativeDocumentMoniker": "Clients\\frmMainMenu.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Clients\\frmMainMenu.cs",
-              "RelativeToolTip": "Clients\\frmMainMenu.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAswGEAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Clients\\frmMainMenu.cs \u2B24",
+              "RelativeToolTip": "Clients\\frmMainMenu.cs \u2B24",
+              "ViewState": "AgIAAGsAAAAAAAAAAAA/wJUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-10T14:30:52.803Z",
               "EditorCaption": ""
@@ -93,8 +93,7 @@
               "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Clients\\frmMainMenu.cs [Design]",
               "RelativeToolTip": "Clients\\frmMainMenu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T14:30:44.406Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-09-10T14:30:44.406Z"
             },
             {
               "$type": "Document",
