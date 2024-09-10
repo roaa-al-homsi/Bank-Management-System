@@ -29,20 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.l = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.labTimer = new System.Windows.Forms.Label();
             this.labCheckLogin = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.labTimer = new System.Windows.Forms.Label();
             this.l.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // l
@@ -50,7 +47,6 @@
             this.l.Controls.Add(this.labTimer);
             this.l.Controls.Add(this.labCheckLogin);
             this.l.Controls.Add(this.btnLogin);
-            this.l.Controls.Add(this.guna2PictureBox1);
             this.l.Controls.Add(this.guna2HtmlLabel2);
             this.l.Controls.Add(this.txtPassword);
             this.l.Controls.Add(this.guna2HtmlLabel1);
@@ -65,6 +61,17 @@
             this.l.Size = new System.Drawing.Size(952, 606);
             this.l.TabIndex = 0;
             // 
+            // labTimer
+            // 
+            this.labTimer.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labTimer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labTimer.Location = new System.Drawing.Point(638, 483);
+            this.labTimer.Name = "labTimer";
+            this.labTimer.Size = new System.Drawing.Size(61, 26);
+            this.labTimer.TabIndex = 11;
+            this.labTimer.Text = "00:60";
+            this.labTimer.Visible = false;
+            // 
             // labCheckLogin
             // 
             this.labCheckLogin.AutoSize = false;
@@ -77,7 +84,6 @@
             this.labCheckLogin.Size = new System.Drawing.Size(295, 64);
             this.labCheckLogin.TabIndex = 7;
             this.labCheckLogin.Text = "guna2HtmlLabel3";
-            this.labCheckLogin.Click += new System.EventHandler(this.labCheckLogin_Click);
             // 
             // btnLogin
             // 
@@ -99,19 +105,6 @@
             this.btnLogin.Text = "Login";
             this.btnLogin.UseTransparentBackground = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(61, 60);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(108, 108);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 5;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // guna2HtmlLabel2
             // 
@@ -208,17 +201,6 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // labTimer
-            // 
-            this.labTimer.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labTimer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labTimer.Location = new System.Drawing.Point(638, 483);
-            this.labTimer.Name = "labTimer";
-            this.labTimer.Size = new System.Drawing.Size(61, 26);
-            this.labTimer.TabIndex = 11;
-            this.labTimer.Text = "00:60";
-            this.labTimer.Visible = false;
-            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -230,7 +212,6 @@
             this.Text = "frmLogincs";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.l.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -243,7 +224,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnLogin;
         private Guna.UI2.WinForms.Guna2HtmlLabel labCheckLogin;
         private System.Windows.Forms.Timer timer1;

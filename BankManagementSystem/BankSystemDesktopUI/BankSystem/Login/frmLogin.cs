@@ -23,8 +23,10 @@ namespace BankSystem.Login
             GlobalVariables.CurrentUser = User.Find(txtUserName.Text, txtPassword.Text);
             if (GlobalVariables.CurrentUser != null)
             {
+                this.Hide();
                 frmMainMenu frmMainMenu = new frmMainMenu();
                 frmMainMenu.Show();
+
             }
             else
             {
@@ -61,9 +63,7 @@ namespace BankSystem.Login
             }
         }
 
-        private void labCheckLogin_Click(object sender, System.EventArgs e)
-        {
 
-        }
+
     }
 }
