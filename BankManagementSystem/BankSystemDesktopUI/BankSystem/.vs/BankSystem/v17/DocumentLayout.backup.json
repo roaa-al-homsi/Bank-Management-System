@@ -3,22 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C47DE23E-FF9D-41AC-9595-606B6E65E7F8}|..\\ConsoleBankSystem\\ConsoleBankSystem.csproj|c:\\users\\ruaa\\source\\repos\\bankmanagementsystem\\banksystemdesktopui\\consolebanksystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6CEC8D6-7DEF-45CF-B1E0-248C47273006}|..\\..\\BankSystemDataAccess\\BankSystemDataAccess.csproj|c:\\users\\ruaa\\source\\repos\\bankmanagementsystem\\banksystemdataaccess\\clientdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\bankmanagementsystem\\banksystemdesktopui\\banksystem\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88438210-DAF4-4EAB-9F61-2D2ECF5CFAFA}|..\\..\\BankSystemBusiness\\BankSystemBusiness.csproj|c:\\users\\ruaa\\source\\repos\\bankmanagementsystem\\banksystembusiness\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\clients\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|solutionrelative:clients\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|BankSystemDataAccess||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\clients\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|solutionrelative:clients\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ruaa\\source\\repos\\ConsoleBankSystem\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2068D7C4-6F26-4E30-ABF7-04D568877499}|..\\SystemGlobalVariables\\SystemGlobalVariables.csproj|c:\\users\\ruaa\\source\\repos\\bankmanagementsystem\\banksystemdesktopui\\systemglobalvariables\\globalvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6CEC8D6-7DEF-45CF-B1E0-248C47273006}|..\\..\\BankSystemDataAccess\\BankSystemDataAccess.csproj|c:\\users\\ruaa\\source\\repos\\bankmanagementsystem\\banksystemdataaccess\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+      "AbsoluteMoniker": "D:0:0:{A6CEC8D6-7DEF-45CF-B1E0-248C47273006}|..\\..\\BankSystemDataAccess\\BankSystemDataAccess.csproj|c:\\users\\ruaa\\source\\repos\\bankmanagementsystem\\banksystemdataaccess\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,65 +36,77 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BankSystemDataAccess",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDataAccess\\BankSystemDataAccess.csproj",
-              "RelativeDocumentMoniker": "..\\..\\BankSystemDataAccess\\BankSystemDataAccess.csproj",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDataAccess\\BankSystemDataAccess.csproj",
-              "RelativeToolTip": "..\\..\\BankSystemDataAccess\\BankSystemDataAccess.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-09-09T18:12:05.764Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "UserData.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDataAccess\\UserData.cs",
+              "RelativeDocumentMoniker": "..\\..\\BankSystemDataAccess\\UserData.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDataAccess\\UserData.cs",
+              "RelativeToolTip": "..\\..\\BankSystemDataAccess\\UserData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T13:48:08.455Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\ConsoleBankSystem\\Program.cs",
-              "RelativeDocumentMoniker": "..\\ConsoleBankSystem\\Program.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\ConsoleBankSystem\\Program.cs \u2B24",
-              "RelativeToolTip": "..\\ConsoleBankSystem\\Program.cs \u2B24",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAQwB0AAAATAAAAAAAAAA==",
+              "Title": "frmLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Login\\frmLogin.cs",
+              "RelativeDocumentMoniker": "Login\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Login\\frmLogin.cs [Design]",
+              "RelativeToolTip": "Login\\frmLogin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T18:11:58.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\ConsoleBankSystem\\Program.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\ConsoleBankSystem\\Program.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\ConsoleBankSystem\\Program.cs",
-              "RelativeToolTip": "..\\..\\..\\ConsoleBankSystem\\Program.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T06:35:03.702Z"
+              "WhenOpened": "2024-09-09T20:27:22.056Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ClientData.cs",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDataAccess\\ClientData.cs",
-              "RelativeDocumentMoniker": "..\\..\\BankSystemDataAccess\\ClientData.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDataAccess\\ClientData.cs",
-              "RelativeToolTip": "..\\..\\BankSystemDataAccess\\ClientData.cs",
-              "ViewState": "AgIAAFwBAAAAAAAAAAAnwOcAAAAJAAAAAAAAAA==",
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Login\\frmLogin.cs",
+              "RelativeDocumentMoniker": "Login\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Login\\frmLogin.cs",
+              "RelativeToolTip": "Login\\frmLogin.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAArwEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T05:33:43.367Z",
+              "WhenOpened": "2024-09-09T19:37:21.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmMainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Clients\\frmMainMenu.cs",
+              "RelativeDocumentMoniker": "Clients\\frmMainMenu.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Clients\\frmMainMenu.cs",
+              "RelativeToolTip": "Clients\\frmMainMenu.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAswGEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T14:30:52.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemBusiness\\Client.cs",
-              "RelativeDocumentMoniker": "..\\..\\BankSystemBusiness\\Client.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemBusiness\\Client.cs",
-              "RelativeToolTip": "..\\..\\BankSystemBusiness\\Client.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAAAywNAAAAAAAAAAAAAAAA==",
+              "Title": "frmMainMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Clients\\frmMainMenu.cs",
+              "RelativeDocumentMoniker": "Clients\\frmMainMenu.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Clients\\frmMainMenu.cs [Design]",
+              "RelativeToolTip": "Clients\\frmMainMenu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T05:28:34.744Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-10T14:30:44.406Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GlobalVariables.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\SystemGlobalVariables\\GlobalVariables.cs",
+              "RelativeDocumentMoniker": "..\\SystemGlobalVariables\\GlobalVariables.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\SystemGlobalVariables\\GlobalVariables.cs",
+              "RelativeToolTip": "..\\SystemGlobalVariables\\GlobalVariables.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T14:13:10.624Z"
             }
           ]
         }
