@@ -43,3 +43,6 @@ C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\o
 C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\obj\Debug\BankSystem.Users.frmMainManageUsers.resources
 C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\obj\Debug\BankSystem.Users.frmAddUser.resources
 C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\obj\Debug\BankSystem.Users.frmUpdate.resources
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\obj\Debug\BankSystem.Login.frmLogin.resources
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\bin\Debug\SystemGlobalVariables.dll
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\bin\Debug\SystemGlobalVariables.pdb

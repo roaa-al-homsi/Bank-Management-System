@@ -60,7 +60,28 @@ namespace BankSystemBusiness
                 return null;
             }
         }
+        static public User Find(string UserName, string Password)
+        {
+            int Id = -1;
+            string FirstName = string.Empty;
+            string LastName = string.Empty;
+            string Email = string.Empty;
+            int PersonId = -1;
+            string PhoneNumber = string.Empty;
+            DateTime BirthDate = new DateTime(1999, 1, 1);
+            string ImagePath = string.Empty;
+            int Permission = 1;
 
+            if (UserData.GetUserByUserNameAndPassword(UserName, ref FirstName, ref LastName, ref Id, ref PersonId, ref PhoneNumber, ref Email, Password
+                , ref Permission, ref BirthDate, ref ImagePath))
+            {
+                return new User(UserName, FirstName, LastName, Id, PersonId, PhoneNumber, Email, Password, Permission, BirthDate, ImagePath);
+            }
+            else
+            {
+                return null;
+            }
+        }
         private bool _Add()
         {
             if (!base.Save())

@@ -3,6 +3,7 @@ using Guna.UI2.WinForms;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using SystemGlobalVariables;
 
 namespace BankSystem.Clients
 {
@@ -130,6 +131,11 @@ namespace BankSystem.Clients
         {
             btnTitle.Image = btnManageUser.Image;
             _OpenChildFormAsync(new frmMainManageUsers(this), sender);
+        }
+
+        private void frmMainMenu_Load(object sender, EventArgs e)
+        {
+            labUserName.Text = GlobalVariables.CurrentUser.UserName;
         }
     }
 }

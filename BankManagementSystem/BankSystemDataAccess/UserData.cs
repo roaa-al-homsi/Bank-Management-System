@@ -51,6 +51,50 @@ namespace BankSystemDataAccess
 
         }
 
+
+        static public bool GetUserByUserNameAndPassword(string UserName, ref string FirstName, ref string LastName, ref int Id, ref int PersonId, ref string PhoneNumber, ref string Email, string Password,
+           ref int Permission, ref DateTime BirthDate, ref string ImagePath)
+        {
+            bool IsFind = false;
+            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
+            string query = @"select * from View_UserDetails where  UserName=@UserName and Password=@Password;";
+
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@UserName", UserName);
+            command.Parameters.AddWithValue("@Password", Password);
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    IsFind = true;
+
+                    Id = (int)reader["Id"];
+                    FirstName = (string)reader["FirstName"];
+                    LastName = (string)reader["LastName"];
+                    PhoneNumber = (string)reader["PhoneNumber"];
+                    Email = (string)reader["Email"];
+                    PersonId = (int)reader["PersonID"];
+                    BirthDate = (DateTime)reader["BirthDate"];
+                    Permission = (int)reader["Permission"];
+
+                    ImagePath = (reader["ImagePath"] != DBNull.Value) ? (string)reader["ImagePath"] : "";
+                }
+                else
+                { IsFind = false; }
+
+                reader.Close();
+            }
+            catch (Exception ex) { IsFind = false; }
+            finally { connection.Close(); }
+
+            return IsFind;
+
+        }
+
+
         static public int Add(string UserName, string Password, int Permission, int PersonId)
         {
             int NewUserId = 0;

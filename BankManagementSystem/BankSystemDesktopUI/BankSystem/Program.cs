@@ -1,4 +1,4 @@
-﻿using BankSystem.Clients;
+﻿using BankSystem.Login;
 using System;
 using System.Windows.Forms;
 
@@ -19,7 +19,7 @@ namespace BankSystem
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMainMenu());
+            Application.Run(new frmLogin());
 
         }
 

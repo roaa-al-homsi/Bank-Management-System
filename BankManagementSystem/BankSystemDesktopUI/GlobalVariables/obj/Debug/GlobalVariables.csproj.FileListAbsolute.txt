@@ -1,0 +1,11 @@
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\GlobalVariables\bin\Debug\GlobalVariables.dll
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\GlobalVariables\bin\Debug\GlobalVariables.pdb
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\GlobalVariables\bin\Debug\BankSystemBusiness.dll
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\GlobalVariables\bin\Debug\BankSystemDataAccess.dll
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\GlobalVariables\bin\Debug\BankSystemBusiness.pdb
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\GlobalVariables\bin\Debug\BankSystemDataAccess.pdb
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\GlobalVariables\obj\Debug\GlobalVariables.csproj.AssemblyReference.cache
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\GlobalVariables\obj\Debug\GlobalVariables.csproj.CoreCompileInputs.cache
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\GlobalVariables\obj\Debug\GlobalVa.E74B6B44.Up2Date
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\GlobalVariables\obj\Debug\GlobalVariables.dll
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\GlobalVariables\obj\Debug\GlobalVariables.pdb
