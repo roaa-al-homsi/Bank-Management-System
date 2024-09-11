@@ -37,7 +37,6 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.txtPermission = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
@@ -51,6 +50,7 @@
             this.linkLabRemove = new System.Windows.Forms.LinkLabel();
             this.LinkLabSetImage = new System.Windows.Forms.LinkLabel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             ((System.ComponentModel.ISupportInitialize)(this.picboxUser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +60,7 @@
             this.Permission.BackColor = System.Drawing.Color.Transparent;
             this.Permission.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Permission.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
-            this.Permission.Location = new System.Drawing.Point(520, 523);
+            this.Permission.Location = new System.Drawing.Point(551, 469);
             this.Permission.Name = "Permission";
             this.Permission.Size = new System.Drawing.Size(115, 36);
             this.Permission.TabIndex = 101;
@@ -72,7 +72,7 @@
             this.Password.BackColor = System.Drawing.Color.Transparent;
             this.Password.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
-            this.Password.Location = new System.Drawing.Point(520, 459);
+            this.Password.Location = new System.Drawing.Point(551, 405);
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(115, 36);
             this.Password.TabIndex = 100;
@@ -84,7 +84,7 @@
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(520, 395);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(551, 341);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(115, 36);
             this.guna2HtmlLabel6.TabIndex = 99;
@@ -96,7 +96,7 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(520, 331);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(551, 277);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(115, 36);
             this.guna2HtmlLabel4.TabIndex = 98;
@@ -108,7 +108,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(520, 267);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(551, 213);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(115, 36);
             this.guna2HtmlLabel3.TabIndex = 97;
@@ -120,7 +120,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(520, 203);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(551, 149);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(115, 36);
             this.guna2HtmlLabel2.TabIndex = 96;
@@ -132,7 +132,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(520, 139);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(551, 85);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(115, 36);
             this.guna2HtmlLabel1.TabIndex = 95;
@@ -144,33 +144,13 @@
             this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(681, 387);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(712, 333);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
             this.guna2DateTimePicker1.Size = new System.Drawing.Size(230, 36);
             this.guna2DateTimePicker1.TabIndex = 94;
             this.guna2DateTimePicker1.Value = new System.DateTime(2024, 8, 28, 22, 13, 54, 517);
-            // 
-            // txtPermission
-            // 
-            this.txtPermission.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPermission.DefaultText = "";
-            this.txtPermission.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPermission.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPermission.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPermission.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPermission.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPermission.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPermission.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPermission.Location = new System.Drawing.Point(681, 515);
-            this.txtPermission.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtPermission.Name = "txtPermission";
-            this.txtPermission.PasswordChar = '\0';
-            this.txtPermission.PlaceholderText = "";
-            this.txtPermission.SelectedText = "";
-            this.txtPermission.Size = new System.Drawing.Size(230, 32);
-            this.txtPermission.TabIndex = 93;
             // 
             // txtPassword
             // 
@@ -183,7 +163,7 @@
             this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Location = new System.Drawing.Point(681, 453);
+            this.txtPassword.Location = new System.Drawing.Point(712, 399);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '\0';
@@ -203,7 +183,7 @@
             this.txtPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhone.Location = new System.Drawing.Point(681, 325);
+            this.txtPhone.Location = new System.Drawing.Point(712, 271);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
@@ -223,7 +203,7 @@
             this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Location = new System.Drawing.Point(681, 263);
+            this.txtEmail.Location = new System.Drawing.Point(712, 209);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
@@ -243,7 +223,7 @@
             this.txtLastName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLastName.Location = new System.Drawing.Point(681, 201);
+            this.txtLastName.Location = new System.Drawing.Point(712, 147);
             this.txtLastName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.PasswordChar = '\0';
@@ -263,7 +243,7 @@
             this.txtFirstName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFirstName.Location = new System.Drawing.Point(681, 139);
+            this.txtFirstName.Location = new System.Drawing.Point(712, 85);
             this.txtFirstName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.PasswordChar = '\0';
@@ -322,7 +302,7 @@
             this.labUserName.BackColor = System.Drawing.Color.Transparent;
             this.labUserName.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
-            this.labUserName.Location = new System.Drawing.Point(520, 75);
+            this.labUserName.Location = new System.Drawing.Point(551, 21);
             this.labUserName.Name = "labUserName";
             this.labUserName.Size = new System.Drawing.Size(133, 36);
             this.labUserName.TabIndex = 104;
@@ -334,7 +314,7 @@
             this.labUserNameInfo.BackColor = System.Drawing.Color.Transparent;
             this.labUserNameInfo.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labUserNameInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
-            this.labUserNameInfo.Location = new System.Drawing.Point(681, 75);
+            this.labUserNameInfo.Location = new System.Drawing.Point(712, 21);
             this.labUserNameInfo.Name = "labUserNameInfo";
             this.labUserNameInfo.Size = new System.Drawing.Size(230, 36);
             this.labUserNameInfo.TabIndex = 105;
@@ -368,11 +348,27 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Add Client",
+            "Find Client",
+            "Delete Client",
+            "Update Client",
+            "Show Clients",
+            "Manage Users"});
+            this.checkedListBox1.Location = new System.Drawing.Point(712, 469);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(230, 140);
+            this.checkedListBox1.TabIndex = 108;
+            // 
             // frmUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 628);
+            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.linkLabRemove);
             this.Controls.Add(this.LinkLabSetImage);
             this.Controls.Add(this.labUserNameInfo);
@@ -387,7 +383,6 @@
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2DateTimePicker1);
-            this.Controls.Add(this.txtPermission);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.txtEmail);
@@ -412,7 +407,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI2.WinForms.Guna2TextBox txtPermission;
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
         private Guna.UI2.WinForms.Guna2TextBox txtPhone;
         private Guna.UI2.WinForms.Guna2TextBox txtEmail;
@@ -426,5 +420,6 @@
         private System.Windows.Forms.LinkLabel linkLabRemove;
         private System.Windows.Forms.LinkLabel LinkLabSetImage;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
 }

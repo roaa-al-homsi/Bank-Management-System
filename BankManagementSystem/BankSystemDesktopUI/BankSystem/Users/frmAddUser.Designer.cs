@@ -47,8 +47,8 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.picboxUser = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.txtPermission = new Guna.UI2.WinForms.Guna2TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             ((System.ComponentModel.ISupportInitialize)(this.picboxUser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -322,29 +322,24 @@
             this.btnAdd.Text = "Add";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // txtPermission
-            // 
-            this.txtPermission.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPermission.DefaultText = "";
-            this.txtPermission.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPermission.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPermission.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPermission.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPermission.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPermission.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPermission.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPermission.Location = new System.Drawing.Point(719, 475);
-            this.txtPermission.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtPermission.Name = "txtPermission";
-            this.txtPermission.PasswordChar = '\0';
-            this.txtPermission.PlaceholderText = "";
-            this.txtPermission.SelectedText = "";
-            this.txtPermission.Size = new System.Drawing.Size(230, 32);
-            this.txtPermission.TabIndex = 43;
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Add Client",
+            "Find Client",
+            "Delete Client",
+            "Update Client",
+            "Show Clients",
+            "Manage Users"});
+            this.checkedListBox1.Location = new System.Drawing.Point(719, 471);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(192, 123);
+            this.checkedListBox1.TabIndex = 43;
             // 
             // frmAddUser
             // 
@@ -352,7 +347,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(978, 628);
-            this.Controls.Add(this.txtPermission);
+            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.picboxUser);
             this.Controls.Add(this.btnAdd);
@@ -399,7 +394,7 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox picboxUser;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
-        private Guna.UI2.WinForms.Guna2TextBox txtPermission;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
 }

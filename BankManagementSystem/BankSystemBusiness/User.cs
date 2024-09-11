@@ -9,6 +9,7 @@ namespace BankSystemBusiness
         private enum enMode { Add = 0, Update = 1 };
         private enMode _Mode;
 
+
         public int Id { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }

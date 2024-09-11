@@ -1,16 +1,29 @@
 ﻿using BankSystemBusiness;
 using System;
 using System.Windows.Forms;
+using SystemGlobalVariables;
 
 namespace BankSystem.Users
 {
     public partial class frmAddUser : Form
     {
 
+        private int _PermissionOnlyUser = 0;
         public frmAddUser()
         {
             InitializeComponent();
+            checkedListBox1.ItemCheck += CheckedListBox1_ItemCheck;
+
         }
+
+        private void _UncheckAll()
+        {
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
+            {
+                checkedListBox1.SetItemChecked(i, false);
+            }
+        }
+
         private void _BackDefaultControls()
         {
             txtUserName.Text = string.Empty;
@@ -18,14 +31,9 @@ namespace BankSystem.Users
             txtLastName.Text = string.Empty;
             txtEmail.Text = string.Empty;
             txtPhone.Text = string.Empty;
-            txtPermission.Text = string.Empty;
+            _UncheckAll();
             txtPassword.Text = string.Empty;
             guna2DateTimePicker1.Value = DateTime.Now;
-
-
-
-            // picboxClientUdate
-
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -35,7 +43,7 @@ namespace BankSystem.Users
             _User.LastName = txtLastName.Text;
             _User.Email = txtEmail.Text;
             _User.PhoneNumber = txtPhone.Text;
-            _User.Permission = int.Parse(txtPermission.Text);
+            _User.Permission = _PermissionOnlyUser;
             _User.BirthDate = guna2DateTimePicker1.Value;
             _User.Password = txtPassword.Text;
 
@@ -50,7 +58,6 @@ namespace BankSystem.Users
             _User.Save();
             _BackDefaultControls();
         }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             openFileDialog1.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
@@ -68,5 +75,48 @@ namespace BankSystem.Users
             }
 
         }
+        private void CheckedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Get the checked list box control
+            CheckedListBox checkedListBox = sender as CheckedListBox;
+            string item = checkedListBox.Items[e.Index].ToString();
+
+            // Check if the item is being checked or unchecked
+
+            if (e.NewValue == CheckState.Checked && item == "Add Client")
+            {
+                _PermissionOnlyUser += (int)GlobalVariables.enMainMenuPermission.AddClient;
+
+            }
+            else if (e.NewValue == CheckState.Checked && item == "Find Client")
+            {
+                _PermissionOnlyUser += (int)GlobalVariables.enMainMenuPermission.FindClient;
+            }
+            else if (e.NewValue == CheckState.Checked && item == "Update Client")
+            {
+                _PermissionOnlyUser += (int)GlobalVariables.enMainMenuPermission.UpdateClient;
+
+            }
+            else if (e.NewValue == CheckState.Checked && item == "Show Clients")
+            {
+                _PermissionOnlyUser += (int)GlobalVariables.enMainMenuPermission.ShowClients;
+            }
+            else if (e.NewValue == CheckState.Checked && item == "Delete Client")
+            {
+                _PermissionOnlyUser += (int)GlobalVariables.enMainMenuPermission.DeleteClient;
+
+            }
+            else if (e.NewValue == CheckState.Checked && item == "Manage Users")
+            {
+                _PermissionOnlyUser += (int)GlobalVariables.enMainMenuPermission.ManageUsers;
+
+            }
+
+            else
+            {
+                _PermissionOnlyUser = 0;
+            }
+        }
+
     }
 }
