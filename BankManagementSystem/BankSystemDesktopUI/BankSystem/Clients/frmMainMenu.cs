@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using SystemGlobalVariables;
 
+
 namespace BankSystem.Clients
 {
     public partial class frmMainMenu : Form
@@ -99,49 +100,89 @@ namespace BankSystem.Clients
             }
         }
 
+
+
         private void btnShowClients_Click(object sender, EventArgs e)
         {
+            if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.ShowClients))
+            {
+                MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
+                    "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
             btnTitle.Image = btnShowClients.Image;
             _OpenChildFormAsync(new frmShowClients(this), sender);
         }
 
         private void btnAddNew_Click(object sender, EventArgs e)
         {
+            if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.AddClient))
+            {
+                MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
+                    "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
             btnTitle.Image = btnAddNew.Image;
             _OpenChildFormAsync(new frmAdd(), sender);
         }
 
         private void btnFindClient_Click(object sender, EventArgs e)
         {
+            if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.FindClient))
+            {
+                MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
+                    "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
             btnTitle.Image = btnFindClient.Image;
             _OpenChildFormAsync(new frmFind(), sender);
         }
 
         private void btnUpdateClient_Click(object sender, EventArgs e)
         {
+            if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.UpdateClient))
+            {
+                MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
+                    "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
             btnTitle.Image = btnUpdateClient.Image;
             _OpenChildFormAsync(new frmUpdate(), sender);
         }
 
         private void btnDeleteClient_Click(object sender, EventArgs e)
         {
+            if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.DeleteClient))
+            {
+                MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
+                    "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
             btnTitle.Image = btnDeleteClient.Image;
             _OpenChildFormAsync(new frmDelete(), sender);
         }
 
         private void btnManageUser_Click(object sender, EventArgs e)
         {
+            if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.ManageUsers))
+            {
+                MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
+                    "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
             btnTitle.Image = btnManageUser.Image;
             _OpenChildFormAsync(new frmMainManageUsers(this), sender);
         }
 
         private void frmMainMenu_Load(object sender, EventArgs e)
         {
+
             labUserName.Text = GlobalVariables.CurrentUser.UserName;
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
+
             this.Close();
             frmLogin frmLogin = new frmLogin();
             frmLogin.Show();
