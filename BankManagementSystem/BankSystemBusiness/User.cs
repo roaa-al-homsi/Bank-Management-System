@@ -151,10 +151,23 @@ namespace BankSystemBusiness
             }
         }
 
-        public static DataTable All()
+        static public DataTable All()
         {
             return UserData.All();
         }
+
+        public bool RegisterLogins(DateTime dateLogin, DateTime dateLogout, int UserId)
+        {
+            return UserData.RegisterLogins(dateLogin, dateLogout, UserId);
+        }
+
+        static public DataTable ShowLogins()
+        {
+            return UserData.AllLogins();
+        }
+
+
+
 
     }
 }

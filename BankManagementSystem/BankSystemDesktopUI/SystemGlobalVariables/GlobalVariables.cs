@@ -30,6 +30,10 @@ namespace SystemGlobalVariables
             return (((int)menuPermission & Permission_User) == (int)menuPermission);
         }
 
+        public static DateTime DateLoginToSystem;
+
+        public static DateTime DateLogoutFromSystem;
+
 
 
     }

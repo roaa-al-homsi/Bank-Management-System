@@ -63,8 +63,9 @@
             // 
             // labTimer
             // 
+            this.labTimer.BackColor = System.Drawing.Color.Transparent;
             this.labTimer.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labTimer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labTimer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(77)))), ((int)(((byte)(155)))));
             this.labTimer.Location = new System.Drawing.Point(638, 483);
             this.labTimer.Name = "labTimer";
             this.labTimer.Size = new System.Drawing.Size(61, 26);
@@ -78,8 +79,8 @@
             this.labCheckLogin.BackColor = System.Drawing.Color.Transparent;
             this.labCheckLogin.Enabled = false;
             this.labCheckLogin.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labCheckLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labCheckLogin.Location = new System.Drawing.Point(543, 416);
+            this.labCheckLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(77)))), ((int)(((byte)(155)))));
+            this.labCheckLogin.Location = new System.Drawing.Point(519, 416);
             this.labCheckLogin.Name = "labCheckLogin";
             this.labCheckLogin.Size = new System.Drawing.Size(295, 64);
             this.labCheckLogin.TabIndex = 7;
@@ -111,7 +112,7 @@
             this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Silver;
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(528, 283);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(127, 44);
@@ -154,8 +155,8 @@
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(528, 124);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Silver;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(528, 127);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(127, 44);
             this.guna2HtmlLabel1.TabIndex = 2;

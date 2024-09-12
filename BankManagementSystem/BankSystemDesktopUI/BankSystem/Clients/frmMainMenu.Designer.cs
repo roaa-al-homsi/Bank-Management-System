@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainMenu));
             this.pnlOptions = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.btnManageUser = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteClient = new Guna.UI2.WinForms.Guna2Button();
             this.btnFindClient = new Guna.UI2.WinForms.Guna2Button();
@@ -43,11 +44,13 @@
             this.labUserName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panelMainMenu = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
+            this.labAnotherDateFormat = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labDateTime = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlOptions.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
+            this.panelMainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlOptions
@@ -66,6 +69,27 @@
             this.pnlOptions.Name = "pnlOptions";
             this.pnlOptions.Size = new System.Drawing.Size(230, 712);
             this.pnlOptions.TabIndex = 0;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
+            this.btnLogout.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLogout.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnLogout.Location = new System.Drawing.Point(0, 475);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(230, 51);
+            this.btnLogout.TabIndex = 8;
+            this.btnLogout.Tag = "Logout";
+            this.btnLogout.Text = "Logout ";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnManageUser
             // 
@@ -269,32 +293,37 @@
             // panelMainMenu
             // 
             this.panelMainMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
+            this.panelMainMenu.Controls.Add(this.labAnotherDateFormat);
+            this.panelMainMenu.Controls.Add(this.labDateTime);
             this.panelMainMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMainMenu.Location = new System.Drawing.Point(230, 84);
             this.panelMainMenu.Name = "panelMainMenu";
             this.panelMainMenu.Size = new System.Drawing.Size(978, 628);
             this.panelMainMenu.TabIndex = 2;
             // 
-            // btnLogout
+            // labAnotherDateFormat
             // 
-            this.btnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
-            this.btnLogout.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
-            this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnLogout.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnLogout.Location = new System.Drawing.Point(0, 475);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(230, 51);
-            this.btnLogout.TabIndex = 8;
-            this.btnLogout.Tag = "Logout";
-            this.btnLogout.Text = "Logout ";
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            this.labAnotherDateFormat.AutoSize = false;
+            this.labAnotherDateFormat.BackColor = System.Drawing.Color.Transparent;
+            this.labAnotherDateFormat.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labAnotherDateFormat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labAnotherDateFormat.Location = new System.Drawing.Point(367, 267);
+            this.labAnotherDateFormat.Name = "labAnotherDateFormat";
+            this.labAnotherDateFormat.Size = new System.Drawing.Size(344, 63);
+            this.labAnotherDateFormat.TabIndex = 1;
+            this.labAnotherDateFormat.Text = "guna2HtmlLabel2";
+            // 
+            // labDateTime
+            // 
+            this.labDateTime.AutoSize = false;
+            this.labDateTime.BackColor = System.Drawing.Color.Transparent;
+            this.labDateTime.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labDateTime.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labDateTime.Location = new System.Drawing.Point(367, 175);
+            this.labDateTime.Name = "labDateTime";
+            this.labDateTime.Size = new System.Drawing.Size(344, 63);
+            this.labDateTime.TabIndex = 0;
+            this.labDateTime.Text = "guna2HtmlLabel2";
             // 
             // frmMainMenu
             // 
@@ -313,6 +342,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
+            this.panelMainMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -334,5 +364,7 @@
         private Guna.UI2.WinForms.Guna2Panel panelMainMenu;
         private Guna.UI2.WinForms.Guna2Button btnManageUser;
         private Guna.UI2.WinForms.Guna2Button btnLogout;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labDateTime;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labAnotherDateFormat;
     }
 }
