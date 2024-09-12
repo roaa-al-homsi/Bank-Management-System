@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Windows.Forms;
 using SystemGlobalVariables;
 
-
 namespace BankSystem.Clients
 {
     public partial class frmMainMenu : Form
@@ -100,8 +99,6 @@ namespace BankSystem.Clients
             }
         }
 
-
-
         private void btnShowClients_Click(object sender, EventArgs e)
         {
             if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.ShowClients))
@@ -174,15 +171,20 @@ namespace BankSystem.Clients
             _OpenChildFormAsync(new frmMainManageUsers(this), sender);
         }
 
+
         private void frmMainMenu_Load(object sender, EventArgs e)
         {
-
             labUserName.Text = GlobalVariables.CurrentUser.UserName;
+            GlobalVariables.DateLoginToSystem = DateTime.Now;
+            //Timer for Date time .
+            labDateTime.Text = GlobalVariables.DateLoginToSystem.ToString("dddd/MMMM/yyyy");
+            labAnotherDateFormat.Text = DateTime.Now.ToString();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-
+            GlobalVariables.DateLogoutFromSystem = DateTime.Now;
+            GlobalVariables.CurrentUser.RegisterLogins(GlobalVariables.DateLoginToSystem, GlobalVariables.DateLogoutFromSystem, GlobalVariables.CurrentUser.Id);
             this.Close();
             frmLogin frmLogin = new frmLogin();
             frmLogin.Show();

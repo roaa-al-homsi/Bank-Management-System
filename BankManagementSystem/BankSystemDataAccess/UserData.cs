@@ -256,6 +256,51 @@ namespace BankSystemDataAccess
             return dt;
         }
 
+        static public bool RegisterLogins(DateTime dateLogin, DateTime dateLogout, int UserID)
+        {
+            int RowsAffected = 0;
+            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
+            string query = @"insert into Logins ([Login Date],[Logout Date],[User Id]) values
+                      (@dateLogin,@dateLogout,@UserID);";
+
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@dateLogin", dateLogin);
+            command.Parameters.AddWithValue("@dateLogout", dateLogout);
+            command.Parameters.AddWithValue("@UserID", UserID);
+
+            try
+            {
+                connection.Open();
+                RowsAffected = command.ExecuteNonQuery();
+            }
+            catch (Exception ex) { return false; }
+            finally { connection.Close(); }
+            return RowsAffected > 0;
+        }
+
+        static public DataTable AllLogins()
+        {
+            DataTable dt = new DataTable();
+            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
+            string query = @" select * from View_LoginsDetails";
+
+            SqlCommand command = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader Reader = command.ExecuteReader();
+                if (Reader.HasRows)
+                {
+                    dt.Load(Reader);
+                }
+                Reader.Close();
+            }
+            catch (Exception ex) { }
+            finally { connection.Close(); }
+            return dt;
+
+        }
+
 
     }
 }

@@ -147,31 +147,21 @@ namespace BankSystem.Users
                 _PermissionOnlyUser = 0;
             }
         }
+
         private void _GetNamesOptionAllowedFromUserPermission(int User_Permission)
         {
-
             int[] arrPermission = { 1, 2, 4, 8, 16, 32 };
-            // string[] arrMainMenu = { " [1]List Clients", " [2]Add new clients", " [3]delet clients", " [4]update clients", " [5]find clients", " [6]Transaction", " [7]manage clients" };
             for (short i = 1; i <= 6; i++)
             {
                 if (GlobalVariables.CheckAccessPermission(User_Permission, (GlobalVariables.enMainMenuPermission)arrPermission[i - 1]))
                 {
-                    // تحديد العنصر في الفهرس 2 (العنصر الثالث) كـ Checked
                     checkedListBox1.SetItemChecked(i - 1, true);
-
-                    // العثور على الفهرس بناءً على النص
-                    //int index = checkedListBox1.Items.IndexOf("اسم العنصر الذي تريد تحديده");
-
-                    //// التحقق من أن العنصر موجود قبل التحديد
-                    //if (index != -1)
-                    //{
-                    //    checkedListBox1.SetItemChecked(index, true);
-                    //}
-
                 }
 
             }
 
         }
+
+
     }
 }
