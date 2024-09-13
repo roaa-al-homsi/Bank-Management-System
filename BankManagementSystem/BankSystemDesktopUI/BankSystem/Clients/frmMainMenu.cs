@@ -1,4 +1,5 @@
 ﻿using BankSystem.Login;
+using BankSystem.Transaction;
 using BankSystem.Users;
 using Guna.UI2.WinForms;
 using System;
@@ -192,7 +193,7 @@ namespace BankSystem.Clients
 
         private void btnLoginRegisters_Click(object sender, EventArgs e)
         {
-            if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.ManageUsers))
+            if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.LoginRegister))
             {
                 MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
                     "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
@@ -201,6 +202,18 @@ namespace BankSystem.Clients
             btnTitle.Image = btnManageUser.Image;
             _OpenChildFormAsync(new frmLoginRegisters(), sender);
 
+        }
+
+        private void btnTransaction_Click(object sender, EventArgs e)
+        {
+            if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.Transaction))
+            {
+                MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
+                    "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+            btnTitle.Image = btnManageUser.Image;
+            _OpenChildFormAsync(new frmTransactions(this), sender);
         }
     }
 }

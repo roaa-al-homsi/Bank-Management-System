@@ -54,6 +54,9 @@
             // 
             // guna2DateTimePicker1
             // 
+            this.guna2DateTimePicker1.Animated = true;
+            this.guna2DateTimePicker1.AutoRoundedCorners = true;
+            this.guna2DateTimePicker1.BorderRadius = 17;
             this.guna2DateTimePicker1.Checked = true;
             this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -68,6 +71,9 @@
             // 
             // txtPassword
             // 
+            this.txtPassword.Animated = true;
+            this.txtPassword.AutoRoundedCorners = true;
+            this.txtPassword.BorderRadius = 15;
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.DefaultText = "";
             this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -88,6 +94,9 @@
             // 
             // txtUserName
             // 
+            this.txtUserName.Animated = true;
+            this.txtUserName.AutoRoundedCorners = true;
+            this.txtUserName.BorderRadius = 15;
             this.txtUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUserName.DefaultText = "";
             this.txtUserName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -108,6 +117,9 @@
             // 
             // txtPhone
             // 
+            this.txtPhone.Animated = true;
+            this.txtPhone.AutoRoundedCorners = true;
+            this.txtPhone.BorderRadius = 15;
             this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPhone.DefaultText = "";
             this.txtPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -128,6 +140,9 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.Animated = true;
+            this.txtEmail.AutoRoundedCorners = true;
+            this.txtEmail.BorderRadius = 15;
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.DefaultText = "";
             this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -148,6 +163,9 @@
             // 
             // txtLastName
             // 
+            this.txtLastName.Animated = true;
+            this.txtLastName.AutoRoundedCorners = true;
+            this.txtLastName.BorderRadius = 15;
             this.txtLastName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLastName.DefaultText = "";
             this.txtLastName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -168,6 +186,9 @@
             // 
             // txtFirstName
             // 
+            this.txtFirstName.Animated = true;
+            this.txtFirstName.AutoRoundedCorners = true;
+            this.txtFirstName.BorderRadius = 15;
             this.txtFirstName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFirstName.DefaultText = "";
             this.txtFirstName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -308,12 +329,15 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.Animated = true;
+            this.btnAdd.AutoRoundedCorners = true;
+            this.btnAdd.BorderRadius = 21;
             this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
-            this.btnAdd.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnAdd.ForeColor = System.Drawing.Color.DarkGray;
             this.btnAdd.Location = new System.Drawing.Point(96, 539);
             this.btnAdd.Name = "btnAdd";
@@ -335,10 +359,12 @@
             "Delete Client",
             "Update Client",
             "Show Clients",
-            "Manage Users"});
+            "Manage Users",
+            "Login Register",
+            "Transaction"});
             this.checkedListBox1.Location = new System.Drawing.Point(719, 471);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(192, 123);
+            this.checkedListBox1.Size = new System.Drawing.Size(193, 140);
             this.checkedListBox1.TabIndex = 43;
             // 
             // frmAddUser

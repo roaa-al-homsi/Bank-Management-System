@@ -324,7 +324,7 @@ namespace BankSystemDataAccess
             return total;
         }
 
-        static public bool Deposit(float AmountDeposit, string AccountNumber)
+        static public bool Deposit(double AmountDeposit, string AccountNumber)
         {
             int RowsAffected = 0;
             SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
@@ -344,7 +344,7 @@ namespace BankSystemDataAccess
             return RowsAffected > 0;
         }
 
-        static public bool RegisterTransfers(DateTime dateTime, string SourceAccountNumber, string DestinationAccountNumber, float Amount,
+        static public bool RegisterTransfers(DateTime dateTime, string SourceAccountNumber, string DestinationAccountNumber, double Amount,
             double SalarySourceAccount, double SalaryDestinationAccount, string UserName)
         {
 
@@ -374,7 +374,29 @@ namespace BankSystemDataAccess
 
         }
 
+        static public DataTable Transaction()
+        {
+            DataTable dt = new DataTable();
+            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
+            string query = @"select * from View_Transaction";
 
+            SqlCommand command = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader Reader = command.ExecuteReader();
+                if (Reader.HasRows)
+                {
+                    dt.Load(Reader);
+                }
+                Reader.Close();
+            }
+            catch (Exception ex) { }
+            finally { connection.Close(); }
+            return dt;
+
+
+        }
 
 
 
