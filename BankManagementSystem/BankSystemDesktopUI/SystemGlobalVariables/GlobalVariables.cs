@@ -8,11 +8,11 @@ namespace SystemGlobalVariables
 
         public static User CurrentUser = User.Find("", "");
         [Flags]
-        public enum enMainMenuPermission { AddClient = 1, FindClient = 2, DeleteClient = 4, UpdateClient = 8, ShowClients = 16, ManageUsers = 32 };
+        public enum enMainMenuPermission { AddClient = 1, FindClient = 2, DeleteClient = 4, UpdateClient = 8, ShowClients = 16, ManageUsers = 32, LoginRegister = 64, Transaction = 128 };
 
         public static bool CheckAccessPermission(GlobalVariables.enMainMenuPermission menuPermission)
         {
-            if (GlobalVariables.CurrentUser.Permission == 63)
+            if (GlobalVariables.CurrentUser.Permission == 255)
             {
                 return true;
             }
@@ -22,7 +22,7 @@ namespace SystemGlobalVariables
 
         public static bool CheckAccessPermission(int Permission_User, GlobalVariables.enMainMenuPermission menuPermission)
         {
-            if (GlobalVariables.CurrentUser.Permission == 63)
+            if (GlobalVariables.CurrentUser.Permission == 255)
             {
                 return true;
             }

@@ -36,7 +36,7 @@ namespace BankSystem.Clients
                     linkLabRemove.Enabled = false;
                     picboxClientUpdate.ImageLocation = null;
                 }
-                //linkLabRemove.Enabled = (_client.ImagePath != null);
+                //linkLabRemove.Enabled = (_SourceClient.ImagePath != null);
 
             }
             else

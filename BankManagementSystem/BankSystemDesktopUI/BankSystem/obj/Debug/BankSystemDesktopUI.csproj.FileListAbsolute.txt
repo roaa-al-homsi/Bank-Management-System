@@ -47,3 +47,7 @@ C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\o
 C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\bin\Debug\SystemGlobalVariables.dll
 C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\bin\Debug\SystemGlobalVariables.pdb
 C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\obj\Debug\BankSystem.Login.frmLoginRegisters.resources
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\obj\Debug\BankSystem.Transaction.frmTransactions.resources
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\obj\Debug\BankSystem.Transaction.frmDeposit.resources
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\obj\Debug\BankSystem.Transaction.frmWithdraw.resources
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\obj\Debug\BankSystem.Transaction.frmTransfer.resources

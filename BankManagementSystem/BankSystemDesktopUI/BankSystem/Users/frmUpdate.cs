@@ -141,6 +141,16 @@ namespace BankSystem.Users
                 _PermissionOnlyUser += (int)GlobalVariables.enMainMenuPermission.ManageUsers;
 
             }
+            else if (e.NewValue == CheckState.Checked && item == "Login Register")
+            {
+                _PermissionOnlyUser += (int)GlobalVariables.enMainMenuPermission.LoginRegister;
+
+            }
+            else if (e.NewValue == CheckState.Checked && item == "Transaction")
+            {
+                _PermissionOnlyUser += (int)GlobalVariables.enMainMenuPermission.Transaction;
+
+            }
 
             else
             {
@@ -150,8 +160,8 @@ namespace BankSystem.Users
 
         private void _GetNamesOptionAllowedFromUserPermission(int User_Permission)
         {
-            int[] arrPermission = { 1, 2, 4, 8, 16, 32 };
-            for (short i = 1; i <= 6; i++)
+            int[] arrPermission = { 1, 2, 4, 8, 16, 32, 64, 128 };
+            for (short i = 1; i <= 8; i++)
             {
                 if (GlobalVariables.CheckAccessPermission(User_Permission, (GlobalVariables.enMainMenuPermission)arrPermission[i - 1]))
                 {

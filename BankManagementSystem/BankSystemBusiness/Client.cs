@@ -169,13 +169,13 @@ namespace BankSystemBusiness
         {
             return ClientData.TotalBalance();
         }
-        public bool Deposit(float AmountDeposit)
+        public bool Deposit(double AmountDeposit)
         {
             this.Salary += AmountDeposit;
             return ClientData.Deposit(AmountDeposit, this.AccountNumber);
         }
 
-        public bool Withdraw(float AmountWithdraw)
+        public bool Withdraw(double AmountWithdraw)
         {
             if (AmountWithdraw > this.Salary)
             {
@@ -187,7 +187,7 @@ namespace BankSystemBusiness
             }
         }
 
-        private void _RegisterTransfers(float Amount, Client ClientDestination, string UserName)
+        private void _RegisterTransfers(double Amount, Client ClientDestination, string UserName)
         {
             DateTime dateTime = DateTime.Now;
 
@@ -195,7 +195,7 @@ namespace BankSystemBusiness
 
         }
 
-        public bool Transfer(float Amount, Client DestinationClient)
+        public bool Transfer(double Amount, Client DestinationClient)
         {
             if (Amount > this.Salary)
             {
@@ -207,6 +207,11 @@ namespace BankSystemBusiness
             return true; ;
         }
 
+        static public DataTable Transaction()
+        {
+            return ClientData.Transaction();
+
+        }
 
 
 

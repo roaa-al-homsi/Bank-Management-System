@@ -111,6 +111,16 @@ namespace BankSystem.Users
                 _PermissionOnlyUser += (int)GlobalVariables.enMainMenuPermission.ManageUsers;
 
             }
+            else if (e.NewValue == CheckState.Checked && item == "Login Register")
+            {
+                _PermissionOnlyUser += (int)GlobalVariables.enMainMenuPermission.LoginRegister;
+
+            }
+            else if (e.NewValue == CheckState.Checked && item == "Transaction")
+            {
+                _PermissionOnlyUser += (int)GlobalVariables.enMainMenuPermission.Transaction;
+
+            }
 
             else
             {
