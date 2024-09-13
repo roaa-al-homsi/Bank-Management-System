@@ -46,3 +46,4 @@ C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\o
 C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\obj\Debug\BankSystem.Login.frmLogin.resources
 C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\bin\Debug\SystemGlobalVariables.dll
 C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\bin\Debug\SystemGlobalVariables.pdb
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\obj\Debug\BankSystem.Login.frmLoginRegisters.resources

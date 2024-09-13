@@ -171,7 +171,6 @@ namespace BankSystem.Clients
             _OpenChildFormAsync(new frmMainManageUsers(this), sender);
         }
 
-
         private void frmMainMenu_Load(object sender, EventArgs e)
         {
             labUserName.Text = GlobalVariables.CurrentUser.UserName;
@@ -191,8 +190,18 @@ namespace BankSystem.Clients
 
         }
 
+        private void btnLoginRegisters_Click(object sender, EventArgs e)
+        {
+            if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.ManageUsers))
+            {
+                MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
+                    "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+            btnTitle.Image = btnManageUser.Image;
+            _OpenChildFormAsync(new frmLoginRegisters(), sender);
 
-
+        }
     }
 }
 

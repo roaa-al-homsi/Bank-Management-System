@@ -30,33 +30,35 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainMenu));
             this.pnlOptions = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.labUserName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.panelMainMenu = new Guna.UI2.WinForms.Guna2Panel();
+            this.labAnotherDateFormat = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labDateTime = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnTitle = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLoginRegisters = new Guna.UI2.WinForms.Guna2Button();
             this.btnManageUser = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteClient = new Guna.UI2.WinForms.Guna2Button();
             this.btnFindClient = new Guna.UI2.WinForms.Guna2Button();
             this.btnShowClients = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdateClient = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddNew = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnTitle = new Guna.UI2.WinForms.Guna2Button();
-            this.labUserName = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.panelMainMenu = new Guna.UI2.WinForms.Guna2Panel();
-            this.labAnotherDateFormat = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.labDateTime = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlOptions.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.panelMainMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlOptions
             // 
             this.pnlOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
             this.pnlOptions.Controls.Add(this.btnLogout);
+            this.pnlOptions.Controls.Add(this.btnLoginRegisters);
             this.pnlOptions.Controls.Add(this.btnManageUser);
             this.pnlOptions.Controls.Add(this.btnDeleteClient);
             this.pnlOptions.Controls.Add(this.btnFindClient);
@@ -70,6 +72,105 @@
             this.pnlOptions.Size = new System.Drawing.Size(230, 712);
             this.pnlOptions.TabIndex = 0;
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
+            this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(230, 169);
+            this.guna2Panel1.TabIndex = 0;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
+            this.guna2Panel2.Controls.Add(this.btnTitle);
+            this.guna2Panel2.Controls.Add(this.labUserName);
+            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel2.Location = new System.Drawing.Point(230, 0);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(978, 84);
+            this.guna2Panel2.TabIndex = 1;
+            // 
+            // labUserName
+            // 
+            this.labUserName.BackColor = System.Drawing.Color.Transparent;
+            this.labUserName.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labUserName.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labUserName.Location = new System.Drawing.Point(827, 38);
+            this.labUserName.Name = "labUserName";
+            this.labUserName.Size = new System.Drawing.Size(129, 29);
+            this.labUserName.TabIndex = 1;
+            this.labUserName.Text = "guna2HtmlLabel2";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(770, 38);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(51, 29);
+            this.guna2HtmlLabel1.TabIndex = 0;
+            this.guna2HtmlLabel1.Text = "User :";
+            // 
+            // panelMainMenu
+            // 
+            this.panelMainMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
+            this.panelMainMenu.Controls.Add(this.labAnotherDateFormat);
+            this.panelMainMenu.Controls.Add(this.labDateTime);
+            this.panelMainMenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMainMenu.Location = new System.Drawing.Point(230, 84);
+            this.panelMainMenu.Name = "panelMainMenu";
+            this.panelMainMenu.Size = new System.Drawing.Size(978, 628);
+            this.panelMainMenu.TabIndex = 2;
+            // 
+            // labAnotherDateFormat
+            // 
+            this.labAnotherDateFormat.AutoSize = false;
+            this.labAnotherDateFormat.BackColor = System.Drawing.Color.Transparent;
+            this.labAnotherDateFormat.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labAnotherDateFormat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labAnotherDateFormat.Location = new System.Drawing.Point(367, 267);
+            this.labAnotherDateFormat.Name = "labAnotherDateFormat";
+            this.labAnotherDateFormat.Size = new System.Drawing.Size(344, 63);
+            this.labAnotherDateFormat.TabIndex = 1;
+            this.labAnotherDateFormat.Text = "guna2HtmlLabel2";
+            // 
+            // labDateTime
+            // 
+            this.labDateTime.AutoSize = false;
+            this.labDateTime.BackColor = System.Drawing.Color.Transparent;
+            this.labDateTime.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labDateTime.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labDateTime.Location = new System.Drawing.Point(367, 175);
+            this.labDateTime.Name = "labDateTime";
+            this.labDateTime.Size = new System.Drawing.Size(344, 63);
+            this.labDateTime.TabIndex = 0;
+            this.labDateTime.Text = "guna2HtmlLabel2";
+            // 
+            // btnTitle
+            // 
+            this.btnTitle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTitle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTitle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTitle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTitle.FillColor = System.Drawing.Color.Transparent;
+            this.btnTitle.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTitle.ForeColor = System.Drawing.Color.White;
+            this.btnTitle.Image = ((System.Drawing.Image)(resources.GetObject("btnTitle.Image")));
+            this.btnTitle.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnTitle.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnTitle.Location = new System.Drawing.Point(3, 36);
+            this.btnTitle.Name = "btnTitle";
+            this.btnTitle.Size = new System.Drawing.Size(180, 45);
+            this.btnTitle.TabIndex = 2;
+            this.btnTitle.Text = "Home";
+            this.btnTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // btnLogout
             // 
             this.btnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -78,18 +179,39 @@
             this.btnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
-            this.btnLogout.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Font = new System.Drawing.Font("Andalus", 10.8F);
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnLogout.Location = new System.Drawing.Point(0, 475);
+            this.btnLogout.Location = new System.Drawing.Point(0, 526);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(230, 51);
             this.btnLogout.TabIndex = 8;
             this.btnLogout.Tag = "Logout";
             this.btnLogout.Text = "Logout ";
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // btnLoginRegisters
+            // 
+            this.btnLoginRegisters.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLoginRegisters.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLoginRegisters.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLoginRegisters.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLoginRegisters.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLoginRegisters.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
+            this.btnLoginRegisters.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoginRegisters.ForeColor = System.Drawing.Color.White;
+            this.btnLoginRegisters.Image = ((System.Drawing.Image)(resources.GetObject("btnLoginRegisters.Image")));
+            this.btnLoginRegisters.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLoginRegisters.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnLoginRegisters.Location = new System.Drawing.Point(0, 475);
+            this.btnLoginRegisters.Name = "btnLoginRegisters";
+            this.btnLoginRegisters.Size = new System.Drawing.Size(230, 51);
+            this.btnLoginRegisters.TabIndex = 9;
+            this.btnLoginRegisters.Tag = "Login Registers";
+            this.btnLoginRegisters.Text = "Login Registers";
+            this.btnLoginRegisters.Click += new System.EventHandler(this.btnLoginRegisters_Click);
             // 
             // btnManageUser
             // 
@@ -215,16 +337,6 @@
             this.btnAddNew.Text = "Add Client";
             this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
             // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(230, 169);
-            this.guna2Panel1.TabIndex = 0;
-            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
@@ -235,95 +347,6 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
-            this.guna2Panel2.Controls.Add(this.btnTitle);
-            this.guna2Panel2.Controls.Add(this.labUserName);
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.Location = new System.Drawing.Point(230, 0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(978, 84);
-            this.guna2Panel2.TabIndex = 1;
-            // 
-            // btnTitle
-            // 
-            this.btnTitle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTitle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTitle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTitle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTitle.FillColor = System.Drawing.Color.Transparent;
-            this.btnTitle.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTitle.ForeColor = System.Drawing.Color.White;
-            this.btnTitle.Image = ((System.Drawing.Image)(resources.GetObject("btnTitle.Image")));
-            this.btnTitle.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnTitle.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnTitle.Location = new System.Drawing.Point(3, 36);
-            this.btnTitle.Name = "btnTitle";
-            this.btnTitle.Size = new System.Drawing.Size(180, 45);
-            this.btnTitle.TabIndex = 2;
-            this.btnTitle.Text = "Home";
-            this.btnTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // labUserName
-            // 
-            this.labUserName.BackColor = System.Drawing.Color.Transparent;
-            this.labUserName.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labUserName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labUserName.Location = new System.Drawing.Point(827, 38);
-            this.labUserName.Name = "labUserName";
-            this.labUserName.Size = new System.Drawing.Size(129, 29);
-            this.labUserName.TabIndex = 1;
-            this.labUserName.Text = "guna2HtmlLabel2";
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(770, 38);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(51, 29);
-            this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "User :";
-            // 
-            // panelMainMenu
-            // 
-            this.panelMainMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
-            this.panelMainMenu.Controls.Add(this.labAnotherDateFormat);
-            this.panelMainMenu.Controls.Add(this.labDateTime);
-            this.panelMainMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMainMenu.Location = new System.Drawing.Point(230, 84);
-            this.panelMainMenu.Name = "panelMainMenu";
-            this.panelMainMenu.Size = new System.Drawing.Size(978, 628);
-            this.panelMainMenu.TabIndex = 2;
-            // 
-            // labAnotherDateFormat
-            // 
-            this.labAnotherDateFormat.AutoSize = false;
-            this.labAnotherDateFormat.BackColor = System.Drawing.Color.Transparent;
-            this.labAnotherDateFormat.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labAnotherDateFormat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labAnotherDateFormat.Location = new System.Drawing.Point(367, 267);
-            this.labAnotherDateFormat.Name = "labAnotherDateFormat";
-            this.labAnotherDateFormat.Size = new System.Drawing.Size(344, 63);
-            this.labAnotherDateFormat.TabIndex = 1;
-            this.labAnotherDateFormat.Text = "guna2HtmlLabel2";
-            // 
-            // labDateTime
-            // 
-            this.labDateTime.AutoSize = false;
-            this.labDateTime.BackColor = System.Drawing.Color.Transparent;
-            this.labDateTime.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labDateTime.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labDateTime.Location = new System.Drawing.Point(367, 175);
-            this.labDateTime.Name = "labDateTime";
-            this.labDateTime.Size = new System.Drawing.Size(344, 63);
-            this.labDateTime.TabIndex = 0;
-            this.labDateTime.Text = "guna2HtmlLabel2";
             // 
             // frmMainMenu
             // 
@@ -339,10 +362,10 @@
             this.Load += new System.EventHandler(this.frmMainMenu_Load);
             this.pnlOptions.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.panelMainMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -366,5 +389,6 @@
         private Guna.UI2.WinForms.Guna2Button btnLogout;
         private Guna.UI2.WinForms.Guna2HtmlLabel labDateTime;
         private Guna.UI2.WinForms.Guna2HtmlLabel labAnotherDateFormat;
+        private Guna.UI2.WinForms.Guna2Button btnLoginRegisters;
     }
 }
