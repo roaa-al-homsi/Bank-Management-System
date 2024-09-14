@@ -56,6 +56,7 @@
             this.Controls.Add(this.dgvAllLogins);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLoginRegisters";
+            this.Tag = "Login Registers";
             this.Text = "frmLoginRegisters";
             this.Load += new System.EventHandler(this.frmLoginRegisters_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllLogins)).EndInit();

@@ -43,6 +43,8 @@
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtToSearchAccount = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSalary
@@ -56,8 +58,10 @@
             this.txtSalary.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtSalary.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSalary.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSalary.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
             this.txtSalary.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSalary.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSalary.ForeColor = System.Drawing.Color.DarkGray;
             this.txtSalary.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSalary.Location = new System.Drawing.Point(263, 237);
             this.txtSalary.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -67,6 +71,7 @@
             this.txtSalary.SelectedText = "";
             this.txtSalary.Size = new System.Drawing.Size(134, 37);
             this.txtSalary.TabIndex = 50;
+            this.txtSalary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labSalary
             // 
@@ -91,8 +96,10 @@
             this.txtAccountNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtAccountNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAccountNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAccountNumber.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
             this.txtAccountNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAccountNumber.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAccountNumber.ForeColor = System.Drawing.Color.DarkGray;
             this.txtAccountNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAccountNumber.Location = new System.Drawing.Point(263, 161);
             this.txtAccountNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -102,6 +109,7 @@
             this.txtAccountNumber.SelectedText = "";
             this.txtAccountNumber.Size = new System.Drawing.Size(134, 40);
             this.txtAccountNumber.TabIndex = 48;
+            this.txtAccountNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labAccount
             // 
@@ -126,8 +134,10 @@
             this.txtDesSalary.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtDesSalary.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDesSalary.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDesSalary.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
             this.txtDesSalary.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDesSalary.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDesSalary.ForeColor = System.Drawing.Color.DarkGray;
             this.txtDesSalary.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDesSalary.Location = new System.Drawing.Point(782, 229);
             this.txtDesSalary.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -137,6 +147,7 @@
             this.txtDesSalary.SelectedText = "";
             this.txtDesSalary.Size = new System.Drawing.Size(134, 37);
             this.txtDesSalary.TabIndex = 54;
+            this.txtDesSalary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel1
             // 
@@ -161,8 +172,10 @@
             this.txtDesAccountNum.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtDesAccountNum.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDesAccountNum.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDesAccountNum.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
             this.txtDesAccountNum.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDesAccountNum.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDesAccountNum.ForeColor = System.Drawing.Color.DarkGray;
             this.txtDesAccountNum.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDesAccountNum.Location = new System.Drawing.Point(782, 153);
             this.txtDesAccountNum.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -172,6 +185,7 @@
             this.txtDesAccountNum.SelectedText = "";
             this.txtDesAccountNum.Size = new System.Drawing.Size(134, 40);
             this.txtDesAccountNum.TabIndex = 52;
+            this.txtDesAccountNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel2
             // 
@@ -189,17 +203,17 @@
             // 
             this.btnCancel.AutoRoundedCorners = true;
             this.btnCancel.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancel.BorderRadius = 21;
+            this.btnCancel.BorderRadius = 24;
             this.btnCancel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
+            this.btnCancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
             this.btnCancel.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.ForeColor = System.Drawing.Color.Silver;
             this.btnCancel.Location = new System.Drawing.Point(524, 473);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(113, 45);
+            this.btnCancel.Size = new System.Drawing.Size(134, 51);
             this.btnCancel.TabIndex = 58;
             this.btnCancel.Text = "Cancel";
             // 
@@ -211,9 +225,9 @@
             this.btnTransfer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnTransfer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnTransfer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTransfer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
+            this.btnTransfer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
             this.btnTransfer.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold);
-            this.btnTransfer.ForeColor = System.Drawing.Color.White;
+            this.btnTransfer.ForeColor = System.Drawing.Color.Silver;
             this.btnTransfer.Location = new System.Drawing.Point(288, 473);
             this.btnTransfer.Name = "btnTransfer";
             this.btnTransfer.Size = new System.Drawing.Size(134, 51);
@@ -232,8 +246,10 @@
             this.txtAmount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtAmount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAmount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAmount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
             this.txtAmount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAmount.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAmount.ForeColor = System.Drawing.Color.DarkGray;
             this.txtAmount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAmount.Location = new System.Drawing.Point(496, 388);
             this.txtAmount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -272,23 +288,25 @@
             // 
             this.txtToSearchAccount.Animated = true;
             this.txtToSearchAccount.AutoRoundedCorners = true;
-            this.txtToSearchAccount.BorderRadius = 19;
+            this.txtToSearchAccount.BorderRadius = 21;
             this.txtToSearchAccount.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtToSearchAccount.DefaultText = "";
             this.txtToSearchAccount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtToSearchAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtToSearchAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtToSearchAccount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtToSearchAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
             this.txtToSearchAccount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtToSearchAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtToSearchAccount.ForeColor = System.Drawing.Color.DarkGray;
             this.txtToSearchAccount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtToSearchAccount.Location = new System.Drawing.Point(590, 45);
+            this.txtToSearchAccount.Location = new System.Drawing.Point(590, 40);
             this.txtToSearchAccount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtToSearchAccount.Name = "txtToSearchAccount";
             this.txtToSearchAccount.PasswordChar = '\0';
             this.txtToSearchAccount.PlaceholderText = "";
             this.txtToSearchAccount.SelectedText = "";
-            this.txtToSearchAccount.Size = new System.Drawing.Size(134, 40);
+            this.txtToSearchAccount.Size = new System.Drawing.Size(130, 45);
             this.txtToSearchAccount.TabIndex = 60;
             // 
             // btnSearch
@@ -299,9 +317,9 @@
             this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
+            this.btnSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
             this.btnSearch.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.ForeColor = System.Drawing.Color.Silver;
             this.btnSearch.Location = new System.Drawing.Point(767, 40);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(130, 45);
@@ -309,12 +327,24 @@
             this.btnSearch.Text = "Search";
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::BankSystem.Properties.Resources.money_transaction;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(751, 407);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(146, 162);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 62;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // frmTransfer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(960, 581);
+            this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtToSearchAccount);
             this.Controls.Add(this.guna2HtmlLabel3);
@@ -332,7 +362,9 @@
             this.Controls.Add(this.labAccount);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmTransfer";
+            this.Tag = "Transfer";
             this.Text = "frmTransfer";
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -354,5 +386,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2TextBox txtToSearchAccount;
         private Guna.UI2.WinForms.Guna2Button btnSearch;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

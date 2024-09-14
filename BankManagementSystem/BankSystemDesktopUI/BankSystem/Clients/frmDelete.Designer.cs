@@ -163,14 +163,19 @@
             // 
             // txtSalary
             // 
+            this.txtSalary.Animated = true;
+            this.txtSalary.AutoRoundedCorners = true;
+            this.txtSalary.BorderRadius = 15;
             this.txtSalary.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSalary.DefaultText = "";
             this.txtSalary.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtSalary.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtSalary.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSalary.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSalary.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
             this.txtSalary.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSalary.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSalary.ForeColor = System.Drawing.Color.DarkGray;
             this.txtSalary.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSalary.Location = new System.Drawing.Point(683, 506);
             this.txtSalary.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -180,17 +185,23 @@
             this.txtSalary.SelectedText = "";
             this.txtSalary.Size = new System.Drawing.Size(230, 32);
             this.txtSalary.TabIndex = 107;
+            this.txtSalary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtPinCode
             // 
+            this.txtPinCode.Animated = true;
+            this.txtPinCode.AutoRoundedCorners = true;
+            this.txtPinCode.BorderRadius = 15;
             this.txtPinCode.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPinCode.DefaultText = "";
             this.txtPinCode.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtPinCode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtPinCode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPinCode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPinCode.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
             this.txtPinCode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPinCode.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPinCode.ForeColor = System.Drawing.Color.DarkGray;
             this.txtPinCode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPinCode.Location = new System.Drawing.Point(683, 444);
             this.txtPinCode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -200,17 +211,23 @@
             this.txtPinCode.SelectedText = "";
             this.txtPinCode.Size = new System.Drawing.Size(230, 32);
             this.txtPinCode.TabIndex = 106;
+            this.txtPinCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtPhone
             // 
+            this.txtPhone.Animated = true;
+            this.txtPhone.AutoRoundedCorners = true;
+            this.txtPhone.BorderRadius = 15;
             this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPhone.DefaultText = "";
             this.txtPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPhone.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
             this.txtPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPhone.ForeColor = System.Drawing.Color.DarkGray;
             this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhone.Location = new System.Drawing.Point(683, 316);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -220,17 +237,23 @@
             this.txtPhone.SelectedText = "";
             this.txtPhone.Size = new System.Drawing.Size(230, 32);
             this.txtPhone.TabIndex = 105;
+            this.txtPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtEmail
             // 
+            this.txtEmail.Animated = true;
+            this.txtEmail.AutoRoundedCorners = true;
+            this.txtEmail.BorderRadius = 15;
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.DefaultText = "";
             this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
             this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmail.ForeColor = System.Drawing.Color.DarkGray;
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.Location = new System.Drawing.Point(683, 254);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -240,17 +263,23 @@
             this.txtEmail.SelectedText = "";
             this.txtEmail.Size = new System.Drawing.Size(230, 32);
             this.txtEmail.TabIndex = 104;
+            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtLastName
             // 
+            this.txtLastName.Animated = true;
+            this.txtLastName.AutoRoundedCorners = true;
+            this.txtLastName.BorderRadius = 15;
             this.txtLastName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLastName.DefaultText = "";
             this.txtLastName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtLastName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtLastName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtLastName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLastName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
             this.txtLastName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtLastName.ForeColor = System.Drawing.Color.DarkGray;
             this.txtLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLastName.Location = new System.Drawing.Point(683, 192);
             this.txtLastName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -260,17 +289,23 @@
             this.txtLastName.SelectedText = "";
             this.txtLastName.Size = new System.Drawing.Size(230, 32);
             this.txtLastName.TabIndex = 103;
+            this.txtLastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtFirstName
             // 
+            this.txtFirstName.Animated = true;
+            this.txtFirstName.AutoRoundedCorners = true;
+            this.txtFirstName.BorderRadius = 15;
             this.txtFirstName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFirstName.DefaultText = "";
             this.txtFirstName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtFirstName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtFirstName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtFirstName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtFirstName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
             this.txtFirstName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtFirstName.ForeColor = System.Drawing.Color.DarkGray;
             this.txtFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFirstName.Location = new System.Drawing.Point(683, 130);
             this.txtFirstName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -280,31 +315,39 @@
             this.txtFirstName.SelectedText = "";
             this.txtFirstName.Size = new System.Drawing.Size(230, 32);
             this.txtFirstName.TabIndex = 102;
+            this.txtFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnShowInfo
             // 
+            this.btnShowInfo.Animated = true;
+            this.btnShowInfo.AutoRoundedCorners = true;
+            this.btnShowInfo.BorderRadius = 20;
             this.btnShowInfo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnShowInfo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnShowInfo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnShowInfo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnShowInfo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
-            this.btnShowInfo.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowInfo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
+            this.btnShowInfo.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold);
             this.btnShowInfo.ForeColor = System.Drawing.Color.White;
             this.btnShowInfo.Location = new System.Drawing.Point(110, 109);
             this.btnShowInfo.Name = "btnShowInfo";
-            this.btnShowInfo.Size = new System.Drawing.Size(113, 45);
+            this.btnShowInfo.Size = new System.Drawing.Size(121, 43);
             this.btnShowInfo.TabIndex = 111;
             this.btnShowInfo.Text = "Show Info";
             this.btnShowInfo.Click += new System.EventHandler(this.btnShowInfo_Click);
             // 
             // txtSearchAccountNum
             // 
+            this.txtSearchAccountNum.Animated = true;
+            this.txtSearchAccountNum.AutoRoundedCorners = true;
+            this.txtSearchAccountNum.BorderRadius = 18;
             this.txtSearchAccountNum.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSearchAccountNum.DefaultText = "";
             this.txtSearchAccountNum.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtSearchAccountNum.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtSearchAccountNum.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSearchAccountNum.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchAccountNum.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
             this.txtSearchAccountNum.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchAccountNum.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearchAccountNum.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -314,7 +357,7 @@
             this.txtSearchAccountNum.PasswordChar = '\0';
             this.txtSearchAccountNum.PlaceholderText = "";
             this.txtSearchAccountNum.SelectedText = "";
-            this.txtSearchAccountNum.Size = new System.Drawing.Size(79, 38);
+            this.txtSearchAccountNum.Size = new System.Drawing.Size(90, 38);
             this.txtSearchAccountNum.TabIndex = 110;
             // 
             // guna2HtmlLabel9
@@ -331,12 +374,15 @@
             // 
             // btnDelete
             // 
+            this.btnDelete.Animated = true;
+            this.btnDelete.AutoRoundedCorners = true;
+            this.btnDelete.BorderRadius = 21;
             this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
-            this.btnDelete.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
+            this.btnDelete.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(110, 466);
             this.btnDelete.Name = "btnDelete";

@@ -199,7 +199,7 @@ namespace BankSystem.Clients
                     "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
-            btnTitle.Image = btnManageUser.Image;
+            btnTitle.Image = btnLoginRegisters.Image;
             _OpenChildFormAsync(new frmLoginRegisters(), sender);
 
         }
@@ -212,7 +212,7 @@ namespace BankSystem.Clients
                     "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
-            btnTitle.Image = btnManageUser.Image;
+            btnTitle.Image = btnTransaction.Image;
             _OpenChildFormAsync(new frmTransactions(this), sender);
         }
     }

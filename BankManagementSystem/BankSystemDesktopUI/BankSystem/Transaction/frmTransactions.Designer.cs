@@ -32,12 +32,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvTransaction = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.labTotalSalary = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.cmsDeposit = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsWithdraw = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsTransfer = new System.Windows.Forms.ToolStripMenuItem();
+            this.label = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labTotalSalary = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransaction)).BeginInit();
             this.guna2ContextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -100,6 +100,50 @@
             this.dgvTransaction.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvTransaction.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // guna2ContextMenuStrip1
+            // 
+            this.guna2ContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
+            this.guna2ContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.guna2ContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cmsDeposit,
+            this.cmsWithdraw,
+            this.cmsTransfer});
+            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
+            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
+            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(143, 76);
+            // 
+            // cmsDeposit
+            // 
+            this.cmsDeposit.ForeColor = System.Drawing.Color.Silver;
+            this.cmsDeposit.Name = "cmsDeposit";
+            this.cmsDeposit.Size = new System.Drawing.Size(142, 24);
+            this.cmsDeposit.Text = "Deposit";
+            this.cmsDeposit.Click += new System.EventHandler(this.cmsDeposit_Click);
+            // 
+            // cmsWithdraw
+            // 
+            this.cmsWithdraw.ForeColor = System.Drawing.Color.Silver;
+            this.cmsWithdraw.Name = "cmsWithdraw";
+            this.cmsWithdraw.Size = new System.Drawing.Size(142, 24);
+            this.cmsWithdraw.Text = "Withdraw";
+            this.cmsWithdraw.Click += new System.EventHandler(this.cmsWithdraw_Click);
+            // 
+            // cmsTransfer
+            // 
+            this.cmsTransfer.ForeColor = System.Drawing.Color.Silver;
+            this.cmsTransfer.Name = "cmsTransfer";
+            this.cmsTransfer.Size = new System.Drawing.Size(142, 24);
+            this.cmsTransfer.Text = "Transfer";
+            this.cmsTransfer.Click += new System.EventHandler(this.cmsTransfer_Click);
+            // 
             // label
             // 
             this.label.AutoSize = false;
@@ -127,51 +171,7 @@
             this.labTotalSalary.Size = new System.Drawing.Size(138, 44);
             this.labTotalSalary.TabIndex = 2;
             this.labTotalSalary.Text = "Total Salary ";
-            this.labTotalSalary.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // guna2ContextMenuStrip1
-            // 
-            this.guna2ContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
-            this.guna2ContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.guna2ContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cmsDeposit,
-            this.cmsWithdraw,
-            this.cmsTransfer});
-            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
-            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
-            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
-            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(211, 104);
-            // 
-            // cmsDeposit
-            // 
-            this.cmsDeposit.ForeColor = System.Drawing.Color.Silver;
-            this.cmsDeposit.Name = "cmsDeposit";
-            this.cmsDeposit.Size = new System.Drawing.Size(210, 24);
-            this.cmsDeposit.Text = "Deposit";
-            this.cmsDeposit.Click += new System.EventHandler(this.cmsDeposit_Click);
-            // 
-            // cmsWithdraw
-            // 
-            this.cmsWithdraw.ForeColor = System.Drawing.Color.Silver;
-            this.cmsWithdraw.Name = "cmsWithdraw";
-            this.cmsWithdraw.Size = new System.Drawing.Size(210, 24);
-            this.cmsWithdraw.Text = "Withdraw";
-            this.cmsWithdraw.Click += new System.EventHandler(this.cmsWithdraw_Click);
-            // 
-            // cmsTransfer
-            // 
-            this.cmsTransfer.ForeColor = System.Drawing.Color.Silver;
-            this.cmsTransfer.Name = "cmsTransfer";
-            this.cmsTransfer.Size = new System.Drawing.Size(210, 24);
-            this.cmsTransfer.Text = "Transfer";
-            this.cmsTransfer.Click += new System.EventHandler(this.cmsTransfer_Click);
+            this.labTotalSalary.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmTransactions
             // 
@@ -183,6 +183,7 @@
             this.Controls.Add(this.dgvTransaction);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmTransactions";
+            this.Tag = "Transactions";
             this.Text = "frmTransactioncs";
             this.Load += new System.EventHandler(this.frmTransactions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransaction)).EndInit();

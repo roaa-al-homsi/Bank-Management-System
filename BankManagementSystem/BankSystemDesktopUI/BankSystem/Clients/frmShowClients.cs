@@ -35,9 +35,12 @@ namespace BankSystem.Clients
 
         private void toolStripMenuItem2_Click(object sender, System.EventArgs e)
         {
-            int ClientID = (int)dgvAllClients.CurrentRow.Cells[0].Value;
-            Client.Delete(ClientID);
-            _RefreshClientsList();
+            if (MessageBox.Show("Are you sure delete this client?", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.OK)
+            {
+                int ClientID = (int)dgvAllClients.CurrentRow.Cells[0].Value;
+                Client.Delete(ClientID);
+                _RefreshClientsList();
+            }
         }
     }
 }
