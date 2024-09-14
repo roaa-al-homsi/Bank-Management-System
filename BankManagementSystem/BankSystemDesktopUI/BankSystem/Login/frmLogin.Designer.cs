@@ -29,21 +29,66 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.l = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.labTimer = new System.Windows.Forms.Label();
-            this.labCheckLogin = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
+            this.labTimer = new System.Windows.Forms.Label();
+            this.l = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.labCheckLogin = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.l.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 20;
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Animated = true;
+            this.btnLogin.AutoRoundedCorners = true;
+            this.btnLogin.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogin.BorderRadius = 24;
+            this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(73)))), ((int)(((byte)(225)))));
+            this.btnLogin.Font = new System.Drawing.Font("Andalus", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.Black;
+            this.btnLogin.Location = new System.Drawing.Point(568, 526);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(185, 50);
+            this.btnLogin.TabIndex = 6;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseTransparentBackground = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // labTimer
+            // 
+            this.labTimer.BackColor = System.Drawing.Color.Transparent;
+            this.labTimer.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labTimer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(77)))), ((int)(((byte)(155)))));
+            this.labTimer.Location = new System.Drawing.Point(638, 483);
+            this.labTimer.Name = "labTimer";
+            this.labTimer.Size = new System.Drawing.Size(61, 26);
+            this.labTimer.TabIndex = 11;
+            this.labTimer.Text = "00:60";
+            this.labTimer.Visible = false;
             // 
             // l
             // 
+            this.l.Controls.Add(this.guna2PictureBox2);
             this.l.Controls.Add(this.labTimer);
             this.l.Controls.Add(this.labCheckLogin);
             this.l.Controls.Add(this.btnLogin);
@@ -61,17 +106,18 @@
             this.l.Size = new System.Drawing.Size(952, 606);
             this.l.TabIndex = 0;
             // 
-            // labTimer
+            // guna2PictureBox2
             // 
-            this.labTimer.BackColor = System.Drawing.Color.Transparent;
-            this.labTimer.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labTimer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(77)))), ((int)(((byte)(155)))));
-            this.labTimer.Location = new System.Drawing.Point(638, 483);
-            this.labTimer.Name = "labTimer";
-            this.labTimer.Size = new System.Drawing.Size(61, 26);
-            this.labTimer.TabIndex = 11;
-            this.labTimer.Text = "00:60";
-            this.labTimer.Visible = false;
+            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.Image = global::BankSystem.Properties.Resources.money1;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(57, 100);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(331, 380);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 48;
+            this.guna2PictureBox2.TabStop = false;
             // 
             // labCheckLogin
             // 
@@ -79,40 +125,19 @@
             this.labCheckLogin.BackColor = System.Drawing.Color.Transparent;
             this.labCheckLogin.Enabled = false;
             this.labCheckLogin.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labCheckLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(77)))), ((int)(((byte)(155)))));
+            this.labCheckLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(73)))), ((int)(((byte)(225)))));
             this.labCheckLogin.Location = new System.Drawing.Point(519, 416);
             this.labCheckLogin.Name = "labCheckLogin";
             this.labCheckLogin.Size = new System.Drawing.Size(295, 64);
             this.labCheckLogin.TabIndex = 7;
-            this.labCheckLogin.Text = "guna2HtmlLabel3";
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Animated = true;
-            this.btnLogin.AutoRoundedCorners = true;
-            this.btnLogin.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogin.BorderRadius = 21;
-            this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(77)))), ((int)(((byte)(155)))));
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(568, 526);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(180, 45);
-            this.btnLogin.TabIndex = 6;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseTransparentBackground = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.labCheckLogin.Text = null;
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Silver;
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(528, 283);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(127, 44);
@@ -138,8 +163,8 @@
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPassword.ForeColor = System.Drawing.Color.Transparent;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.IconLeft = global::BankSystem.Properties.Resources.icons8_user_64;
-            this.txtPassword.IconLeftSize = new System.Drawing.Size(40, 40);
+            this.txtPassword.IconLeft = global::BankSystem.Properties.Resources.data_protection;
+            this.txtPassword.IconLeftSize = new System.Drawing.Size(35, 35);
             this.txtPassword.Location = new System.Drawing.Point(519, 356);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
@@ -155,7 +180,7 @@
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Silver;
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(528, 127);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(127, 44);
@@ -181,8 +206,8 @@
             this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUserName.ForeColor = System.Drawing.Color.Transparent;
             this.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUserName.IconLeft = global::BankSystem.Properties.Resources.icons8_user_64;
-            this.txtUserName.IconLeftSize = new System.Drawing.Size(40, 40);
+            this.txtUserName.IconLeft = global::BankSystem.Properties.Resources.avatar;
+            this.txtUserName.IconLeftSize = new System.Drawing.Size(35, 35);
             this.txtUserName.Location = new System.Drawing.Point(519, 194);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUserName.Name = "txtUserName";
@@ -192,15 +217,6 @@
             this.txtUserName.SelectedText = "";
             this.txtUserName.Size = new System.Drawing.Size(319, 41);
             this.txtUserName.TabIndex = 1;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 20;
-            this.guna2Elipse1.TargetControl = this;
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // frmLogin
             // 
@@ -213,21 +229,22 @@
             this.Text = "frmLogincs";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.l.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel l;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2TextBox txtUserName;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private System.Windows.Forms.Timer timer1;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel l;
+        private System.Windows.Forms.Label labTimer;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labCheckLogin;
+        private Guna.UI2.WinForms.Guna2Button btnLogin;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
-        private Guna.UI2.WinForms.Guna2Button btnLogin;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labCheckLogin;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label labTimer;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2TextBox txtUserName;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
     }
 }

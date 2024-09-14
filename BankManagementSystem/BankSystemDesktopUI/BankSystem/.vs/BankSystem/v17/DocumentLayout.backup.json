@@ -1,12 +1,52 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\bankmanagementsystem\\banksystemdesktopui\\banksystem\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\bankmanagementsystem\\banksystemdesktopui\\banksystem\\clients\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0A5F0A6-C12D-4CA2-A124-8235260BAEFF}|BankSystemDesktopUI.csproj|solutionrelative:clients\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 340,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Login\\frmLogin.cs",
+              "RelativeDocumentMoniker": "Login\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Login\\frmLogin.cs [Design] \u2B24",
+              "RelativeToolTip": "Login\\frmLogin.cs [Design] \u2B24",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T14:16:41.752Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmMainMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Clients\\frmMainMenu.cs",
+              "RelativeDocumentMoniker": "Clients\\frmMainMenu.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\Clients\\frmMainMenu.cs [Design] \u2B24",
+              "RelativeToolTip": "Clients\\frmMainMenu.cs [Design] \u2B24",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T14:09:59.292Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

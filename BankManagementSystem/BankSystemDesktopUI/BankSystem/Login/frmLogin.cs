@@ -36,7 +36,7 @@ namespace BankSystem.Login
                 {
                     txtPassword.Enabled = false;
                     txtUserName.Enabled = false;
-                    labCheckLogin.Text = $"Lock System. You can login after 1 minute";
+                    labCheckLogin.Text = $"System Lock, Wait a few seconds to log in again";
                     CounterFailedLogin = 0;
                     timer1.Enabled = true;
                     labTimer.Visible = true;

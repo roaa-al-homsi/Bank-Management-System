@@ -53,9 +53,10 @@ namespace BankSystem.Clients
 
         }
 
+        private void frmAdd_Load(object sender, System.EventArgs e)
+        {
 
-
-
+        }
 
 
     }
