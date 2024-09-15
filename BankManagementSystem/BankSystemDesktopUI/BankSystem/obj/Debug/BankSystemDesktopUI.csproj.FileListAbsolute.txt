@@ -51,3 +51,5 @@ C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\o
 C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\obj\Debug\BankSystem.Transaction.frmDeposit.resources
 C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\obj\Debug\BankSystem.Transaction.frmWithdraw.resources
 C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\obj\Debug\BankSystem.Transaction.frmTransfer.resources
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\bin\Debug\Validation.dll
+C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\BankSystem\bin\Debug\Validation.pdb

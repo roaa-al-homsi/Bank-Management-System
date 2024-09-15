@@ -119,6 +119,7 @@
             this.txtUserName.Size = new System.Drawing.Size(230, 36);
             this.txtUserName.TabIndex = 36;
             this.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUserName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxLetters_KeyPress);
             // 
             // txtPhone
             // 
@@ -145,6 +146,7 @@
             this.txtPhone.Size = new System.Drawing.Size(230, 36);
             this.txtPhone.TabIndex = 35;
             this.txtPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxNumbers_KeyPress);
             // 
             // txtEmail
             // 
@@ -171,6 +173,7 @@
             this.txtEmail.Size = new System.Drawing.Size(230, 36);
             this.txtEmail.TabIndex = 34;
             this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmail_KeyPress);
             // 
             // txtLastName
             // 
@@ -197,6 +200,7 @@
             this.txtLastName.Size = new System.Drawing.Size(230, 36);
             this.txtLastName.TabIndex = 33;
             this.txtLastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxLetters_KeyPress);
             // 
             // txtFirstName
             // 
@@ -223,6 +227,7 @@
             this.txtFirstName.Size = new System.Drawing.Size(230, 36);
             this.txtFirstName.TabIndex = 32;
             this.txtFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxLetters_KeyPress);
             // 
             // guna2HtmlLabel8
             // 
@@ -242,7 +247,7 @@
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(515, 405);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(515, 419);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(115, 36);
             this.guna2HtmlLabel7.TabIndex = 30;
@@ -254,7 +259,7 @@
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(515, 342);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(515, 355);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(115, 36);
             this.guna2HtmlLabel6.TabIndex = 29;
@@ -278,7 +283,7 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(515, 279);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(515, 287);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(115, 36);
             this.guna2HtmlLabel4.TabIndex = 27;
@@ -302,7 +307,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(515, 153);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(515, 158);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(115, 36);
             this.guna2HtmlLabel2.TabIndex = 25;
@@ -314,7 +319,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(52)))), ((int)(((byte)(110)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(515, 90);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(515, 94);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(115, 36);
             this.guna2HtmlLabel1.TabIndex = 24;

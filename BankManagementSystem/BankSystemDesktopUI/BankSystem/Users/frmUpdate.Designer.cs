@@ -205,6 +205,7 @@
             this.txtPhone.Size = new System.Drawing.Size(230, 32);
             this.txtPhone.TabIndex = 91;
             this.txtPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxNumbers_KeyPress);
             // 
             // txtEmail
             // 
@@ -231,6 +232,7 @@
             this.txtEmail.Size = new System.Drawing.Size(230, 32);
             this.txtEmail.TabIndex = 90;
             this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmail_KeyPress);
             // 
             // txtLastName
             // 
@@ -257,6 +259,7 @@
             this.txtLastName.Size = new System.Drawing.Size(230, 32);
             this.txtLastName.TabIndex = 89;
             this.txtLastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxLetters_KeyPress);
             // 
             // txtFirstName
             // 
@@ -283,6 +286,7 @@
             this.txtFirstName.Size = new System.Drawing.Size(230, 32);
             this.txtFirstName.TabIndex = 88;
             this.txtFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxLetters_KeyPress);
             // 
             // picboxUser
             // 
@@ -433,6 +437,7 @@
             this.Controls.Add(this.picboxUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmUpdate";
+            this.Tag = "Update User";
             this.Text = "frmUpdateUser";
             ((System.ComponentModel.ISupportInitialize)(this.picboxUser)).EndInit();
             this.ResumeLayout(false);

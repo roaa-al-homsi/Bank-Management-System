@@ -344,23 +344,23 @@ namespace BankSystemDataAccess
             return RowsAffected > 0;
         }
 
-        static public bool RegisterTransfers(DateTime dateTime, string SourceAccountNumber, string DestinationAccountNumber, double Amount,
-            double SalarySourceAccount, double SalaryDestinationAccount, string UserName)
+        static public bool RegisterTransfers(DateTime dateTime, int SourceClientId, int DestinationClientId, double Amount,
+            double SalarySourceAccount, double SalaryDestinationAccount, int UserId)
         {
 
             int RowsAffected = 0;
             SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
-            string query = @"insert into Transfers ([Date Time],[Source Account],[Destination Account],Amount,[Salary source account],[Salary destination account],UserName) 
-                           values (@dateTime,@SourceAccountNumber,@DestinationAccountNumber,@Amount,@SalarySourceAccount,@SalaryDestinationAccount,@UserName);";
+            string query = @"insert into Transfers ([Date Time],[Source Client Id],[Destination Client Id],Amount,[Salary source account],[Salary destination account],[User Id]) 
+                           values (@dateTime,@SourceClientId,@DestinationClientId,@Amount,@SalarySourceAccount,@SalaryDestinationAccount,@UserId);";
 
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@dateTime", dateTime);
-            command.Parameters.AddWithValue("@SourceAccountNumber", SourceAccountNumber);
-            command.Parameters.AddWithValue("@DestinationAccountNumber", DestinationAccountNumber);
+            command.Parameters.AddWithValue("@SourceClientId", SourceClientId);
+            command.Parameters.AddWithValue("@DestinationClientId", DestinationClientId);
             command.Parameters.AddWithValue("@Amount", Amount);
             command.Parameters.AddWithValue("@SalarySourceAccount", SalarySourceAccount);
             command.Parameters.AddWithValue("@SalaryDestinationAccount", SalaryDestinationAccount);
-            command.Parameters.AddWithValue("@UserName", UserName);
+            command.Parameters.AddWithValue("@UserId", UserId);
 
             try
             {
@@ -373,7 +373,6 @@ namespace BankSystemDataAccess
             return RowsAffected > 0;
 
         }
-
         static public DataTable Transaction()
         {
             DataTable dt = new DataTable();
@@ -397,11 +396,6 @@ namespace BankSystemDataAccess
 
 
         }
-
-
-
-
-
 
     }
 }

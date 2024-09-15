@@ -99,13 +99,17 @@ namespace BankSystem.Clients
                 btnTitle.Text = childForm.Text;
             }
         }
+        private void _MessageAccessDenied()
+        {
+            MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
+                     "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 
+        }
         private void btnShowClients_Click(object sender, EventArgs e)
         {
             if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.ShowClients))
             {
-                MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
-                    "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                _MessageAccessDenied();
                 return;
             }
             btnTitle.Image = btnShowClients.Image;
@@ -116,8 +120,7 @@ namespace BankSystem.Clients
         {
             if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.AddClient))
             {
-                MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
-                    "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                _MessageAccessDenied();
                 return;
             }
             btnTitle.Image = btnAddNew.Image;
@@ -128,8 +131,7 @@ namespace BankSystem.Clients
         {
             if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.FindClient))
             {
-                MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
-                    "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                _MessageAccessDenied();
                 return;
             }
             btnTitle.Image = btnFindClient.Image;
@@ -140,8 +142,7 @@ namespace BankSystem.Clients
         {
             if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.UpdateClient))
             {
-                MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
-                    "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                _MessageAccessDenied();
                 return;
             }
             btnTitle.Image = btnUpdateClient.Image;
@@ -152,8 +153,7 @@ namespace BankSystem.Clients
         {
             if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.DeleteClient))
             {
-                MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
-                    "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                _MessageAccessDenied();
                 return;
             }
             btnTitle.Image = btnDeleteClient.Image;
@@ -164,8 +164,7 @@ namespace BankSystem.Clients
         {
             if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.ManageUsers))
             {
-                MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
-                    "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                _MessageAccessDenied();
                 return;
             }
             btnTitle.Image = btnManageUser.Image;
@@ -195,8 +194,7 @@ namespace BankSystem.Clients
         {
             if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.LoginRegister))
             {
-                MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
-                    "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                _MessageAccessDenied();
                 return;
             }
             btnTitle.Image = btnLoginRegisters.Image;
@@ -208,8 +206,7 @@ namespace BankSystem.Clients
         {
             if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.Transaction))
             {
-                MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
-                    "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                _MessageAccessDenied();
                 return;
             }
             btnTitle.Image = btnTransaction.Image;

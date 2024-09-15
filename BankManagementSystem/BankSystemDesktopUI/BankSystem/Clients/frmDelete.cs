@@ -66,7 +66,14 @@ namespace BankSystem.Clients
                 _BackDefaultControls();
             }
         }
-
+        private void txtBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // only numbers and char
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
 
     }
 }

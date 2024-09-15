@@ -12,7 +12,7 @@ namespace SystemGlobalVariables
 
         public static bool CheckAccessPermission(GlobalVariables.enMainMenuPermission menuPermission)
         {
-            if (GlobalVariables.CurrentUser.Permission == 255)
+            if (GlobalVariables.CurrentUser.Permission == -1)
             {
                 return true;
             }
@@ -22,7 +22,7 @@ namespace SystemGlobalVariables
 
         public static bool CheckAccessPermission(int Permission_User, GlobalVariables.enMainMenuPermission menuPermission)
         {
-            if (GlobalVariables.CurrentUser.Permission == 255)
+            if (GlobalVariables.CurrentUser.Permission == -1)
             {
                 return true;
             }

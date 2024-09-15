@@ -46,5 +46,16 @@ namespace BankSystem.Transaction
         {
             _BackDefaultForm();
         }
+        private void txtBoxNumbers_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //only numbers
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;// Prevent invalid characters
+            }
+        }
+
+
+
     }
 }
