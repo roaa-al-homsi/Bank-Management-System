@@ -183,6 +183,7 @@
             this.txtSalary.Name = "txtSalary";
             this.txtSalary.PasswordChar = '\0';
             this.txtSalary.PlaceholderText = "";
+            this.txtSalary.ReadOnly = true;
             this.txtSalary.SelectedText = "";
             this.txtSalary.Size = new System.Drawing.Size(230, 32);
             this.txtSalary.TabIndex = 36;
@@ -209,6 +210,7 @@
             this.txtPinCode.Name = "txtPinCode";
             this.txtPinCode.PasswordChar = '\0';
             this.txtPinCode.PlaceholderText = "";
+            this.txtPinCode.ReadOnly = true;
             this.txtPinCode.SelectedText = "";
             this.txtPinCode.Size = new System.Drawing.Size(230, 32);
             this.txtPinCode.TabIndex = 35;
@@ -235,6 +237,7 @@
             this.txtAccountNumber.Name = "txtAccountNumber";
             this.txtAccountNumber.PasswordChar = '\0';
             this.txtAccountNumber.PlaceholderText = "";
+            this.txtAccountNumber.ReadOnly = true;
             this.txtAccountNumber.SelectedText = "";
             this.txtAccountNumber.Size = new System.Drawing.Size(230, 32);
             this.txtAccountNumber.TabIndex = 34;
@@ -261,6 +264,7 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
             this.txtPhone.PlaceholderText = "";
+            this.txtPhone.ReadOnly = true;
             this.txtPhone.SelectedText = "";
             this.txtPhone.Size = new System.Drawing.Size(230, 32);
             this.txtPhone.TabIndex = 33;
@@ -287,6 +291,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
             this.txtEmail.PlaceholderText = "";
+            this.txtEmail.ReadOnly = true;
             this.txtEmail.SelectedText = "";
             this.txtEmail.Size = new System.Drawing.Size(230, 32);
             this.txtEmail.TabIndex = 32;
@@ -313,6 +318,7 @@
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.PasswordChar = '\0';
             this.txtLastName.PlaceholderText = "";
+            this.txtLastName.ReadOnly = true;
             this.txtLastName.SelectedText = "";
             this.txtLastName.Size = new System.Drawing.Size(230, 32);
             this.txtLastName.TabIndex = 31;
@@ -339,6 +345,7 @@
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.PasswordChar = '\0';
             this.txtFirstName.PlaceholderText = "";
+            this.txtFirstName.ReadOnly = true;
             this.txtFirstName.SelectedText = "";
             this.txtFirstName.Size = new System.Drawing.Size(230, 32);
             this.txtFirstName.TabIndex = 30;
@@ -380,6 +387,7 @@
             this.txtSearchAccountNum.SelectedText = "";
             this.txtSearchAccountNum.Size = new System.Drawing.Size(177, 35);
             this.txtSearchAccountNum.TabIndex = 39;
+            this.txtSearchAccountNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBox_KeyPress);
             // 
             // btnSearch
             // 

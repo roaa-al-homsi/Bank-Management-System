@@ -161,6 +161,7 @@
             this.txtFirstName.Size = new System.Drawing.Size(257, 42);
             this.txtFirstName.TabIndex = 10;
             this.txtFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxLetters_KeyPress);
             // 
             // guna2HtmlLabel1
             // 
@@ -199,6 +200,7 @@
             this.txtLastName.Size = new System.Drawing.Size(257, 42);
             this.txtLastName.TabIndex = 11;
             this.txtLastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxLetters_KeyPress);
             // 
             // txtEmail
             // 
@@ -225,6 +227,7 @@
             this.txtEmail.Size = new System.Drawing.Size(257, 42);
             this.txtEmail.TabIndex = 12;
             this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxLetters_KeyPress);
             // 
             // txtPhone
             // 
@@ -251,6 +254,7 @@
             this.txtPhone.Size = new System.Drawing.Size(257, 42);
             this.txtPhone.TabIndex = 13;
             this.txtPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxNumbers_KeyPress);
             // 
             // txtAccountNumber
             // 
@@ -277,6 +281,7 @@
             this.txtAccountNumber.Size = new System.Drawing.Size(257, 42);
             this.txtAccountNumber.TabIndex = 14;
             this.txtAccountNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAccountNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBox_KeyPress);
             // 
             // txtPinCode
             // 
@@ -303,6 +308,7 @@
             this.txtPinCode.Size = new System.Drawing.Size(257, 42);
             this.txtPinCode.TabIndex = 16;
             this.txtPinCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPinCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxNumbers_KeyPress);
             // 
             // txtSalary
             // 
@@ -329,6 +335,7 @@
             this.txtSalary.Size = new System.Drawing.Size(257, 42);
             this.txtSalary.TabIndex = 17;
             this.txtSalary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSalary.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxNumbers_KeyPress);
             // 
             // btnAdd
             // 

@@ -12,7 +12,7 @@ namespace BankSystem.Clients
             InitializeComponent();
         }
 
-        private void FindClient(string AccountNumber)
+        private void _FindClient(string AccountNumber)
         {
             _client = Client.Find(AccountNumber);
             if (_client != null)
@@ -25,16 +25,16 @@ namespace BankSystem.Clients
                 txtSalary.Text = _client.Salary.ToString();
                 guna2DateTimePicker1.Value = _client.BirthDate;
 
-                if (!string.IsNullOrWhiteSpace(_client.ImagePath))
+                if (string.IsNullOrWhiteSpace(_client.ImagePath))
+                {
+                    linkLabRemove.Enabled = false;
+                    picboxClientUpdate.ImageLocation = null;
+                }
+                else
                 {
                     linkLabRemove.Enabled = true;
                     picboxClientUpdate.Load(_client.ImagePath);
                     picboxClientUpdate.ImageLocation = _client.ImagePath;
-                }
-                else
-                {
-                    linkLabRemove.Enabled = false;
-                    picboxClientUpdate.ImageLocation = null;
                 }
                 //linkLabRemove.Enabled = (_SourceClient.ImagePath != null);
 
@@ -50,7 +50,7 @@ namespace BankSystem.Clients
             InitializeComponent();
 
             txtSearchAccountNum.Text = AccountNumber;
-            FindClient(txtSearchAccountNum.Text);
+            _FindClient(txtSearchAccountNum.Text);
         }
 
         private void _BackDefaultControls()
@@ -68,9 +68,10 @@ namespace BankSystem.Clients
             picboxClientUpdate.Image = Properties.Resources.icons8_user_64;
 
         }
+
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            FindClient(txtSearchAccountNum.Text);
+            _FindClient(txtSearchAccountNum.Text);
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -118,5 +119,32 @@ namespace BankSystem.Clients
             _client.ImagePath = null;
             _client.Save();
         }
+
+        private void txtBoxLetters_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //only char
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;// Prevent invalid characters
+            }
+        }
+        private void txtBoxNumbers_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Prevent invalid numbers
+            }
+        }
+        private void txtBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // only numbers and char
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+
     }
 }

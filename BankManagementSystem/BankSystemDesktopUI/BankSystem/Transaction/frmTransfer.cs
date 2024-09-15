@@ -1,6 +1,7 @@
 ﻿using BankSystemBusiness;
 using System;
 using System.Windows.Forms;
+using SystemGlobalVariables;
 
 namespace BankSystem.Transaction
 {
@@ -44,15 +45,37 @@ namespace BankSystem.Transaction
             txtToSearchAccount.Text = string.Empty;
             _Amount = 0;
         }
-        private void Withdraw_Click(object sender, EventArgs e)
+
+
+        private void txtBoxNumbers_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //only numbers
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;// Prevent invalid characters
+            }
+        }
+        private void txtBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // only numbers and char
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void btnTransfer_Click_1(object sender, EventArgs e)
         {
             _Amount = Convert.ToDouble(txtAmount.Text);
             if (_Amount > _SourceClient.Salary)
             {
                 MessageBox.Show("You cannot transfer this amount from this account", "attention", MessageBoxButtons.OK, MessageBoxIcon.None);
             }
-            if (_SourceClient.Transfer(_Amount, _DestinationClient))
+            if (_SourceClient.Transfer(_Amount, _DestinationClient, GlobalVariables.CurrentUser.Id))
             { MessageBox.Show("Transfer Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information); _BackDefaultForm(); }
         }
+
+
     }
+
 }

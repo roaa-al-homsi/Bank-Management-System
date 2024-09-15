@@ -1,5 +1,6 @@
 ﻿using BankSystemBusiness;
 using System;
+using System.Linq;
 using System.Windows.Forms;
 using SystemGlobalVariables;
 
@@ -127,6 +128,33 @@ namespace BankSystem.Users
                 _PermissionOnlyUser = 0;
             }
         }
+
+        private void txtBoxLetters_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+        private void txtBoxNumbers_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+        private void txtEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char[] allowedChars = { '@', '.', '-', '_', '+' };
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !allowedChars.Contains(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+
 
     }
 }

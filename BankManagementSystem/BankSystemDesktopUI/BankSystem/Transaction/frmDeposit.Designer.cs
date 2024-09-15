@@ -61,6 +61,7 @@
             this.txtAccountNumber.Name = "txtAccountNumber";
             this.txtAccountNumber.PasswordChar = '\0';
             this.txtAccountNumber.PlaceholderText = "";
+            this.txtAccountNumber.ReadOnly = true;
             this.txtAccountNumber.SelectedText = "";
             this.txtAccountNumber.Size = new System.Drawing.Size(210, 37);
             this.txtAccountNumber.TabIndex = 36;
@@ -99,10 +100,12 @@
             this.txtSalary.Name = "txtSalary";
             this.txtSalary.PasswordChar = '\0';
             this.txtSalary.PlaceholderText = "";
+            this.txtSalary.ReadOnly = true;
             this.txtSalary.SelectedText = "";
             this.txtSalary.Size = new System.Drawing.Size(210, 37);
             this.txtSalary.TabIndex = 38;
             this.txtSalary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSalary.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxNumbers_KeyPress);
             // 
             // labSalary
             // 
@@ -159,6 +162,7 @@
             this.txtAmount.Size = new System.Drawing.Size(210, 37);
             this.txtAmount.TabIndex = 42;
             this.txtAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxNumbers_KeyPress);
             // 
             // guna2HtmlLabel9
             // 

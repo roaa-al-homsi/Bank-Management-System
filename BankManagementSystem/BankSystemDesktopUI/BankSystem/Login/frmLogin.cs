@@ -7,8 +7,10 @@ namespace BankSystem.Login
 {
     public partial class frmLogin : Form
     {
-        private byte CounterFailedLogin = 0;
-        private int _CounterTick = 60;
+        private byte _CounterFailedLogin = 0;
+        private short _CounterTick = 60;
+
+
         public frmLogin()
         {
             InitializeComponent();
@@ -30,19 +32,19 @@ namespace BankSystem.Login
             }
             else
             {
-                CounterFailedLogin++;
+                _CounterFailedLogin++;
                 labCheckLogin.Visible = true;
-                if (CounterFailedLogin == 3)
+                if (_CounterFailedLogin == 3)
                 {
                     txtPassword.Enabled = false;
                     txtUserName.Enabled = false;
                     labCheckLogin.Text = $"System Lock, Wait a few seconds to log in again";
-                    CounterFailedLogin = 0;
+                    _CounterFailedLogin = 0;
                     timer1.Enabled = true;
                     labTimer.Visible = true;
                 }
                 else
-                { labCheckLogin.Text = $"Invalid username or password, You have {3 - CounterFailedLogin} tries to login"; }
+                { labCheckLogin.Text = $"Invalid username or password, You have {3 - _CounterFailedLogin} tries to login"; }
                 txtUserName.Text = string.Empty;
                 txtPassword.Text = string.Empty;
             }
@@ -63,7 +65,10 @@ namespace BankSystem.Login
             }
         }
 
-
-
+        private void btnClose_Click(object sender, System.EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
+

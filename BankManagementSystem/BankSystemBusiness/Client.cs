@@ -45,14 +45,14 @@ namespace BankSystemBusiness
 
         public static Client Find(string AccountNumber)
         {
-            string FirstName = "";
-            string LastName = "";
-            string Email = "";
+            string FirstName = string.Empty;
+            string LastName = string.Empty;
+            string Email = string.Empty;
             double Salary = 1;
             int PersonId = -2;
-            string PhoneNumber = "";
+            string PhoneNumber = string.Empty;
             DateTime BirthDate = new DateTime(1999, 1, 1);
-            string PinCode = "";
+            string PinCode = string.Empty;
             string ImagePath = null;
             int Id = -1;
             if (ClientData.GetClientByAccountNumber(AccountNumber, ref FirstName, ref LastName, ref Id,
@@ -86,7 +86,6 @@ namespace BankSystemBusiness
                 return new Client(ID, FirstName, LastName, Email, PhoneNumber, BirthDate,
                                       PersonId, Salary, PinCode, AccountNumber, ImagePath);
             }
-
             else
             {
                 return null;
@@ -187,15 +186,14 @@ namespace BankSystemBusiness
             }
         }
 
-        private void _RegisterTransfers(double Amount, Client ClientDestination, string UserName)
+        private void _RegisterTransfers(double Amount, Client ClientDestination, int UserId)
         {
             DateTime dateTime = DateTime.Now;
 
-            ClientData.RegisterTransfers(dateTime, this.AccountNumber, ClientDestination.AccountNumber, Amount, this.Salary, ClientDestination.Salary, UserName);
-
+            ClientData.RegisterTransfers(dateTime, this.Id, ClientDestination.Id, Amount, this.Salary, ClientDestination.Salary, UserId);
         }
 
-        public bool Transfer(double Amount, Client DestinationClient)
+        public bool Transfer(double Amount, Client DestinationClient, int UserId)
         {
             if (Amount > this.Salary)
             {
@@ -203,7 +201,7 @@ namespace BankSystemBusiness
             }
             Withdraw(Amount);
             DestinationClient.Deposit(Amount);
-            _RegisterTransfers(Amount, DestinationClient, "Roaa");
+            _RegisterTransfers(Amount, DestinationClient, UserId);
             return true; ;
         }
 
@@ -212,10 +210,6 @@ namespace BankSystemBusiness
             return ClientData.Transaction();
 
         }
-
-
-
-
 
     }
 }

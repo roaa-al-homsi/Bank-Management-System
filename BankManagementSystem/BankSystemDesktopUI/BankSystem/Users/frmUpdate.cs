@@ -1,5 +1,6 @@
 ﻿using BankSystemBusiness;
 using System;
+using System.Linq;
 using System.Windows.Forms;
 using SystemGlobalVariables;
 namespace BankSystem.Users
@@ -161,7 +162,7 @@ namespace BankSystem.Users
         private void _GetNamesOptionAllowedFromUserPermission(int User_Permission)
         {
             int[] arrPermission = { 1, 2, 4, 8, 16, 32, 64, 128 };
-            for (short i = 1; i <= 8; i++)
+            for (short i = 1; i <= arrPermission.Length; i++)
             {
                 if (GlobalVariables.CheckAccessPermission(User_Permission, (GlobalVariables.enMainMenuPermission)arrPermission[i - 1]))
                 {
@@ -172,6 +173,29 @@ namespace BankSystem.Users
 
         }
 
+        private void txtBoxLetters_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //only char
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;// Prevent invalid characters
+            }
+        }
+        private void txtBoxNumbers_KeyPress(object sender, KeyPressEventArgs e)
+        {
 
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Prevent invalid numbers
+            }
+        }
+        private void txtEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char[] allowedChars = { '@', '.', '-', '_', '+' };
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !allowedChars.Contains(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

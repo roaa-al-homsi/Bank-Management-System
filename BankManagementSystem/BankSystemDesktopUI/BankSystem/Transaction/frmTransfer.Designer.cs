@@ -68,6 +68,7 @@
             this.txtSalary.Name = "txtSalary";
             this.txtSalary.PasswordChar = '\0';
             this.txtSalary.PlaceholderText = "";
+            this.txtSalary.ReadOnly = true;
             this.txtSalary.SelectedText = "";
             this.txtSalary.Size = new System.Drawing.Size(134, 37);
             this.txtSalary.TabIndex = 50;
@@ -106,6 +107,7 @@
             this.txtAccountNumber.Name = "txtAccountNumber";
             this.txtAccountNumber.PasswordChar = '\0';
             this.txtAccountNumber.PlaceholderText = "";
+            this.txtAccountNumber.ReadOnly = true;
             this.txtAccountNumber.SelectedText = "";
             this.txtAccountNumber.Size = new System.Drawing.Size(134, 40);
             this.txtAccountNumber.TabIndex = 48;
@@ -144,6 +146,7 @@
             this.txtDesSalary.Name = "txtDesSalary";
             this.txtDesSalary.PasswordChar = '\0';
             this.txtDesSalary.PlaceholderText = "";
+            this.txtDesSalary.ReadOnly = true;
             this.txtDesSalary.SelectedText = "";
             this.txtDesSalary.Size = new System.Drawing.Size(134, 37);
             this.txtDesSalary.TabIndex = 54;
@@ -182,6 +185,7 @@
             this.txtDesAccountNum.Name = "txtDesAccountNum";
             this.txtDesAccountNum.PasswordChar = '\0';
             this.txtDesAccountNum.PlaceholderText = "";
+            this.txtDesAccountNum.ReadOnly = true;
             this.txtDesAccountNum.SelectedText = "";
             this.txtDesAccountNum.Size = new System.Drawing.Size(134, 40);
             this.txtDesAccountNum.TabIndex = 52;
@@ -233,7 +237,7 @@
             this.btnTransfer.Size = new System.Drawing.Size(134, 51);
             this.btnTransfer.TabIndex = 57;
             this.btnTransfer.Text = "Transfer";
-            this.btnTransfer.Click += new System.EventHandler(this.Withdraw_Click);
+            this.btnTransfer.Click += new System.EventHandler(this.btnTransfer_Click_1);
             // 
             // txtAmount
             // 
@@ -259,6 +263,7 @@
             this.txtAmount.SelectedText = "";
             this.txtAmount.Size = new System.Drawing.Size(210, 37);
             this.txtAmount.TabIndex = 56;
+            this.txtAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxNumbers_KeyPress);
             // 
             // guna2HtmlLabel9
             // 
@@ -308,6 +313,7 @@
             this.txtToSearchAccount.SelectedText = "";
             this.txtToSearchAccount.Size = new System.Drawing.Size(130, 45);
             this.txtToSearchAccount.TabIndex = 60;
+            this.txtToSearchAccount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBox_KeyPress);
             // 
             // btnSearch
             // 

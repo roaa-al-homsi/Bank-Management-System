@@ -228,6 +228,10 @@
       <Project>{2068d7c4-6f26-4e30-abf7-04d568877499}</Project>
       <Name>SystemGlobalVariables</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Validation\BankSystemValidation.csproj">
+      <Project>{c6708a99-b4f1-43b7-b88a-5fad40739abb}</Project>
+      <Name>BankSystemValidation</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\white.png" />
