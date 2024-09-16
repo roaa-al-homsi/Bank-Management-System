@@ -11,108 +11,21 @@ namespace BankSystemDataAccess
             ref string LastName, ref int Id, ref int PersonId, ref string PhoneNumber, ref string Email, ref string PinCode,
             ref double Salary, ref DateTime DateBirth, ref string ImagePath)
         {
-            bool IsFind = false;
 
-            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
-            string query = @"SELECT Clients.ClientID, Persons.FirstName, Persons.LastName, Persons.Email, Persons.PhoneNumber, 
-                        Persons.BirthDate, Persons.ImagePath,Clients.AccountNumber, Clients.Pincode, Clients.Salary, Clients.PersonID
-                FROM Persons INNER JOIN Clients ON Persons.PersonID = Clients.PersonID where Clients.AccountNumber=@AccountNumber;";
+            return GenericData.GetClient<string, int>
+          ("select * from View_ClientDetails where AccountNumber = @AccountNumber;", "@AccountNumber", AccountNumber, ref Id, "ClientID", ref FirstName, ref LastName, ref PersonId, ref PhoneNumber, ref Email, ref PinCode, ref Salary, ref DateBirth, ref ImagePath);
 
-            SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
-
-            try
-            {
-                connection.Open();
-                SqlDataReader reader = command.ExecuteReader();
-                if (reader.Read())
-                {
-                    IsFind = true;
-
-                    FirstName = (string)reader["FirstName"];
-                    LastName = (string)reader["LastName"];
-                    PhoneNumber = (string)reader["PhoneNumber"];
-                    Email = (string)reader["Email"];
-                    PinCode = (string)reader["PinCode"];
-                    Id = (int)reader["ClientID"];
-                    PersonId = (int)reader["PersonID"];
-                    DateBirth = (DateTime)reader["BirthDate"];
-                    Salary = Convert.ToDouble(reader["Salary"]);
-
-
-                    if (reader["ImagePath"] != DBNull.Value)
-                    {
-                        ImagePath = (string)reader["ImagePath"];
-                    }
-                    else
-                    {
-                        ImagePath = "";
-                    }
-                }
-                else
-                { IsFind = false; }
-
-                reader.Close();
-
-            }
-            catch (Exception ex) { IsFind = false; }
-            finally { connection.Close(); }
-
-            return IsFind;
         }
 
 
-        static public bool GetClientByClientID(int ID, ref string AccountNumber, ref string FirstName,
-           ref string LastName, ref int PersonId, ref string PhoneNumber, ref string Email, ref string PinCode,
-           ref double Salary, ref DateTime DateBirth, ref string ImagePath)
-        {
-            bool IsFind = false;
+        //static public bool GetClientByClientID(int ID, ref string AccountNumber, ref string FirstName,
+        //   ref string LastName, ref int PersonId, ref string PhoneNumber, ref string Email, ref string PinCode,
+        //   ref double Salary, ref DateTime DateBirth, ref string ImagePath)
+        //{
+        //    return GenericsData.GetClient<int, string>
+        //     ("select * from View_ClientDetails where ClientID = @ClientID;", "@ClientID", ID, ref AccountNumber, "AccountNumber", ref FirstName, ref LastName, ref PersonId, ref PhoneNumber, ref Email, ref PinCode, ref Salary, ref DateBirth, ref ImagePath);
 
-            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
-            string query = @"SELECT Clients.ClientID, Persons.FirstName, Persons.LastName, Persons.Email, Persons.PhoneNumber, 
-                        Persons.BirthDate,Persons.ImagePath, Clients.AccountNumber, Clients.Pincode, Clients.Salary, Clients.PersonID
-                FROM Persons INNER JOIN Clients ON Persons.PersonID = Clients.PersonID where Clients.ClientID=@ClientID;";
-
-            SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@ClientID", ID);
-
-            try
-            {
-                connection.Open();
-                SqlDataReader reader = command.ExecuteReader();
-                if (reader.Read())
-                {
-                    IsFind = true;
-
-                    FirstName = (string)reader["FirstName"];
-                    LastName = (string)reader["LastName"];
-                    PhoneNumber = (string)reader["PhoneNumber"];
-                    Email = (string)reader["Email"];
-                    PinCode = (string)reader["PinCode"];
-                    AccountNumber = (string)reader["AccountNumber"];
-                    PersonId = (int)reader["PersonID"];
-                    DateBirth = (DateTime)reader["BirthDate"];
-                    Salary = Convert.ToDouble(reader["Salary"]);
-                    if (reader["ImagePath"] != DBNull.Value)
-                    {
-                        ImagePath = (string)reader["ImagePath"];
-                    }
-                    else
-                    {
-                        ImagePath = "";
-                    }
-                }
-                else
-                { IsFind = false; }
-
-                reader.Close();
-
-            }
-            catch (Exception ex) { IsFind = false; }
-            finally { connection.Close(); }
-
-            return IsFind;
-        }
+        //}
 
 
         static public int AddNewClient(string AccountNumber, double Salary, DateTime BirthDate, string PineCode, int PersonID)
@@ -174,85 +87,24 @@ namespace BankSystemDataAccess
 
         static public bool Delete(int ID)
         {
-            int RowsAffected = 0;
-            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
-            string query = "delete Clients where ClientID=@ClientID";
-            SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@ClientID", ID);
+            return GenericData.Delete<int>("delete Clients where ClientID=@ClientID", "@ClientID", ID);
 
-            try
-            {
-                connection.Open();
-                RowsAffected = command.ExecuteNonQuery();
-            }
-            catch (Exception ex) { return false; }
-            finally { connection.Close(); }
-            return RowsAffected > 0;
         }
 
         static public bool Delete(string AccountNumber)
         {
-            int RowsAffected = 0;
-            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
-            string query = "delete Clients where AccountNumber=@AccountNumber";
-            SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
-
-            try
-            {
-                connection.Open();
-                RowsAffected = command.ExecuteNonQuery();
-            }
-            catch (Exception ex) { return false; }
-            finally { connection.Close(); }
-            return RowsAffected > 0;
+            return GenericData.Delete<string>("delete Clients where AccountNumber=@AccountNumber", "@AccountNumber", AccountNumber);
         }
 
         static public int GetPersonIdByClientID(int ClientID)
         {
-            int PersonID = 0;
-            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
-            string query = @"select PersonID from Clients where ClientID=@ClientID;";
-            SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@ClientID", ClientID);
+            return GenericData.GetPersonId<int>("select PersonID from Clients where ClientID=@ClientID;", "@ClientID", ClientID);
 
-            try
-            {
-                connection.Open();
-                object Result = command.ExecuteScalar();
-
-                if (Result != null && int.TryParse(Result.ToString(), out int insertedID))
-                {
-                    PersonID = insertedID;
-                }
-            }
-            catch (Exception ex) { }
-            finally { connection.Close(); }
-            return PersonID;
         }
 
         static public int GetPersonIdByClientAccountNumber(string AccountNumber)
         {
-
-            int PersonID = 0;
-            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
-            string query = @"select PersonID from Clients where AccountNumber=@AccountNumber;";
-            SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
-
-            try
-            {
-                connection.Open();
-                object Result = command.ExecuteScalar();
-
-                if (Result != null && int.TryParse(Result.ToString(), out int insertedID))
-                {
-                    PersonID = insertedID;
-                }
-            }
-            catch (Exception ex) { }
-            finally { connection.Close(); }
-            return PersonID;
+            return GenericData.GetPersonId<string>("select PersonID from Clients where AccountNumber=@AccountNumber;", "@AccountNumber", AccountNumber);
 
         }
 
@@ -278,28 +130,7 @@ namespace BankSystemDataAccess
 
         static public DataTable AllClients()
         {
-            DataTable dt = new DataTable();
-            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
-            string query = @"SELECT Clients.ClientID, Persons.FirstName, Persons.LastName, Persons.Email, Persons.PhoneNumber, 
-                        Persons.BirthDate,Persons.ImagePath, Clients.AccountNumber, Clients.Pincode, Clients.Salary, Clients.PersonID
-                FROM Persons INNER JOIN Clients ON Persons.PersonID = Clients.PersonID ;";
-
-            SqlCommand command = new SqlCommand(query, connection);
-
-
-            try
-            {
-                connection.Open();
-                SqlDataReader Reader = command.ExecuteReader();
-                if (Reader.HasRows)
-                {
-                    dt.Load(Reader);
-                }
-                Reader.Close();
-            }
-            catch (Exception ex) { }
-            finally { connection.Close(); }
-            return dt;
+            return GenericData.All("select * from View_ClientDetails;");
         }
 
         static public double TotalBalance()
@@ -375,26 +206,7 @@ namespace BankSystemDataAccess
         }
         static public DataTable Transaction()
         {
-            DataTable dt = new DataTable();
-            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
-            string query = @"select * from View_Transaction";
-
-            SqlCommand command = new SqlCommand(query, connection);
-            try
-            {
-                connection.Open();
-                SqlDataReader Reader = command.ExecuteReader();
-                if (Reader.HasRows)
-                {
-                    dt.Load(Reader);
-                }
-                Reader.Close();
-            }
-            catch (Exception ex) { }
-            finally { connection.Close(); }
-            return dt;
-
-
+            return GenericData.All("select * from View_Transaction;");
         }
 
     }

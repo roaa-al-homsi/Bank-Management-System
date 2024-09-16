@@ -67,30 +67,30 @@ namespace BankSystemBusiness
             }
         }
 
-        public static Client Find(int ID)
-        {
-            string FirstName = string.Empty;
-            string LastName = string.Empty;
-            string Email = string.Empty;
-            double Salary = 1;
-            int PersonId = -1;
-            string PhoneNumber = string.Empty;
-            DateTime BirthDate = new DateTime(1999, 1, 1);
-            string PinCode = string.Empty;
-            string AccountNumber = string.Empty;
-            string ImagePath = string.Empty;
+        //public static Client Find(int ID)
+        //{
+        //    string FirstName = string.Empty;
+        //    string LastName = string.Empty;
+        //    string Email = string.Empty;
+        //    double Salary = 1;
+        //    int PersonId = -1;
+        //    string PhoneNumber = string.Empty;
+        //    DateTime BirthDate = new DateTime(1999, 1, 1);
+        //    string PinCode = string.Empty;
+        //    string AccountNumber = string.Empty;
+        //    string ImagePath = string.Empty;
 
-            if (ClientData.GetClientByClientID(ID, ref AccountNumber, ref FirstName, ref LastName,
-                ref PersonId, ref PhoneNumber, ref Email, ref PinCode, ref Salary, ref BirthDate, ref ImagePath))
-            {
-                return new Client(ID, FirstName, LastName, Email, PhoneNumber, BirthDate,
-                                      PersonId, Salary, PinCode, AccountNumber, ImagePath);
-            }
-            else
-            {
-                return null;
-            }
-        }
+        //    if (ClientData.GetClientByClientID(ID, ref AccountNumber, ref FirstName, ref LastName,
+        //        ref PersonId, ref PhoneNumber, ref Email, ref PinCode, ref Salary, ref BirthDate, ref ImagePath))
+        //    {
+        //        return new Client(ID, FirstName, LastName, Email, PhoneNumber, BirthDate,
+        //                              PersonId, Salary, PinCode, AccountNumber, ImagePath);
+        //    }
+        //    else
+        //    {
+        //        return null;
+        //    }
+        //}
 
         private bool _AddNew()
         {

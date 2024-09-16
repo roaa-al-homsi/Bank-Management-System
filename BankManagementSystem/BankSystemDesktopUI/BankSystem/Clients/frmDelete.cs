@@ -44,7 +44,8 @@ namespace BankSystem.Clients
 
                 if (_client.ImagePath != null)
                 {
-                    picboxClient.Load(_client.ImagePath);
+                    picboxClient.ImageLocation = _client.ImagePath;
+                    // picboxClient.Load(_client.ImagePath);
                 }
             }
             else
