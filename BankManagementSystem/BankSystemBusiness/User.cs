@@ -125,18 +125,18 @@ namespace BankSystemBusiness
             return false;
         }
 
-        static public bool Delete(int ID)
-        {
-            int PersonId = UserData.GetPersonIdByUserID(ID);
-            if (!UserData.Delete(ID))
-            {
-                return false;
-            }
-            else
-            {
-                return Person.DeletePerson(PersonId);
-            }
-        }
+        //static public bool Delete(int ID)
+        //{
+        //    int PersonId = UserData.GetPersonIdByUserID(ID);
+        //    if (!UserData.Delete(ID))
+        //    {
+        //        return false;
+        //    }
+        //    else
+        //    {
+        //        return Person.DeletePerson(PersonId);
+        //    }
+        //}
 
         static public bool Delete(string UserName)
         {

@@ -85,20 +85,8 @@ namespace BankSystemDataAccess
 
         static public bool Delete(int Id)
         {
-            int RowsAffected = 0;
-            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
-            string query = "delete Persons where PersonID=@PersonID";
-            SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@PersonID", Id);
+            return GenericData.Delete<int>("delete Persons where PersonID=@PersonID", "@PersonID", Id);
 
-            try
-            {
-                connection.Open();
-                RowsAffected = command.ExecuteNonQuery();
-            }
-            catch (Exception ex) { return false; }
-            finally { connection.Close(); }
-            return RowsAffected > 0;
         }
 
     }
