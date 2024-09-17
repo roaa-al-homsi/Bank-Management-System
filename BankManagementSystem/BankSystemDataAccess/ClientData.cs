@@ -18,16 +18,6 @@ namespace BankSystemDataAccess
         }
 
 
-        //static public bool GetClientByClientID(int ID, ref string AccountNumber, ref string FirstName,
-        //   ref string LastName, ref int PersonId, ref string PhoneNumber, ref string Email, ref string PinCode,
-        //   ref double Salary, ref DateTime DateBirth, ref string ImagePath)
-        //{
-        //    return GenericsData.GetClient<int, string>
-        //     ("select * from View_ClientDetails where ClientID = @ClientID;", "@ClientID", ID, ref AccountNumber, "AccountNumber", ref FirstName, ref LastName, ref PersonId, ref PhoneNumber, ref Email, ref PinCode, ref Salary, ref DateBirth, ref ImagePath);
-
-        //}
-
-
         static public int AddNewClient(string AccountNumber, double Salary, DateTime BirthDate, string PineCode, int PersonID)
         {
 
@@ -98,33 +88,37 @@ namespace BankSystemDataAccess
 
         static public int GetPersonIdByClientID(int ClientID)
         {
-            return GenericData.GetPersonId<int>("select PersonID from Clients where ClientID=@ClientID;", "@ClientID", ClientID);
+            return GenericData.GetPersonIdOrClientId<int>("select PersonID from Clients where ClientID=@ClientID;", "@ClientID", ClientID);
 
         }
 
         static public int GetPersonIdByClientAccountNumber(string AccountNumber)
         {
-            return GenericData.GetPersonId<string>("select PersonID from Clients where AccountNumber=@AccountNumber;", "@AccountNumber", AccountNumber);
+            return GenericData.GetPersonIdOrClientId<string>("select PersonID from Clients where AccountNumber=@AccountNumber;", "@AccountNumber", AccountNumber);
 
         }
 
-        static public bool Exists(int ID)
+        static public int GetClientIdByAccountNumber(string AccountNumber)
         {
-            bool IsFound = false;
-            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
-            string query = @"select Found=1 from Clients where ClientID=@ClientID;";
-            SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@ClientID", ID);
-            try
-            {
-                connection.Open();
-                SqlDataReader Reader = command.ExecuteReader();
-                IsFound = Reader.HasRows;
-                Reader.Close();
-            }
-            catch (Exception ex) { }
-            finally { connection.Close(); }
-            return IsFound;
+            return GenericData.GetPersonIdOrClientId<string>("select ClientID from Clients where AccountNumber=@AccountNumber;", "@AccountNumber", AccountNumber);
+
+        }
+
+        static public bool Exist(int ID)
+        {
+            return GenericData.Exist<int>("select Found=1 from Clients where ClientID=@ClientID;", "@ClientID", ID);
+
+        }
+
+        static public bool Exist(string AccountNumber)
+        {
+            return GenericData.Exist<string>("select Found=1 from Clients where AccountNumber=@AccountNumber;", "@AccountNumber", AccountNumber);
+
+        }
+
+        static public bool ClientIdExistInTransfers(int ID)
+        {
+            return GenericData.Exist<int>("select Found=1 from Transfers where [Source Client Id]=@ID or [Destination Client Id]=@ID;", "@ID", ID);
 
         }
 

@@ -36,7 +36,6 @@ namespace BankSystemBusiness
             this.PersonId = -1;
             _Mode = enMode.Add;
         }
-
         static public User Find(string UserName)
         {
             int Id = -1;
@@ -95,7 +94,6 @@ namespace BankSystemBusiness
                 return (this.Id != -1);
             }
         }
-
         private bool _Update()
         {
             if (!base.Save())
@@ -107,9 +105,31 @@ namespace BankSystemBusiness
                 return UserData.Update(this.Id, this.UserName, this.Password, this.Permission, this.PersonId);
             }
         }
+        private bool Exist(string UserName)
+        {
+            return UserData.Exist(UserName);
 
+        }
+        public bool ReadyUser()
+        {
+            if (Exist(this.UserName) || this.Password == null)
+            {
+                return false;
+            }
+
+            if (base.FirstName == null || base.LastName == null || base.Email == null || base.PhoneNumber == null || base.BirthDate == null)
+            {
+                return false;
+            }
+
+            return true;
+
+        }
         public bool Save()
         {
+            if (!ReadyUser())
+            { return false; }
+
             switch (_Mode)
             {
                 case enMode.Add:
@@ -124,19 +144,6 @@ namespace BankSystemBusiness
             }
             return false;
         }
-
-        //static public bool Delete(int ID)
-        //{
-        //    int PersonId = UserData.GetPersonIdByUserID(ID);
-        //    if (!UserData.Delete(ID))
-        //    {
-        //        return false;
-        //    }
-        //    else
-        //    {
-        //        return Person.DeletePerson(PersonId);
-        //    }
-        //}
 
         static public bool Delete(string UserName)
         {
@@ -165,9 +172,6 @@ namespace BankSystemBusiness
         {
             return UserData.AllLogins();
         }
-
-
-
 
     }
 }

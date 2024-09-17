@@ -56,7 +56,14 @@ namespace BankSystem.Users
             {
                 _User.ImagePath = null;
             }
-            _User.Save();
+            if (_User.Save())
+            {
+                MessageBox.Show("Add Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Failed Successfully", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             _BackDefaultControls();
         }
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -145,6 +152,14 @@ namespace BankSystem.Users
                 e.Handled = true;
             }
         }
+        private void txtLettersNumbers_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char[] allowedChars = { '-', '_' };
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !allowedChars.Contains(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
         private void txtEmail_KeyPress(object sender, KeyPressEventArgs e)
         {
             char[] allowedChars = { '@', '.', '-', '_', '+' };
@@ -153,8 +168,6 @@ namespace BankSystem.Users
                 e.Handled = true;
             }
         }
-
-
 
     }
 }

@@ -86,7 +86,15 @@ namespace BankSystem.Clients
 
             _client.ImagePath = (picboxClientUpdate != null) ? picboxClientUpdate.ImageLocation : null;
 
-            _client.Save();
+            if (_client.Save())
+            {
+                MessageBox.Show("Update Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Failed Successfully", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
             _BackDefaultControls();
         }
 
