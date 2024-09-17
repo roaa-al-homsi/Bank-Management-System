@@ -212,6 +212,17 @@ namespace BankSystem.Clients
             btnTitle.Image = btnTransaction.Image;
             _OpenChildFormAsync(new frmTransactions(this), sender);
         }
+
+        private void btnShowTransfer_Click(object sender, EventArgs e)
+        {
+            if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.Transfers))
+            {
+                _MessageAccessDenied();
+                return;
+            }
+            btnTitle.Image = btnShowTransfer.Image;
+            _OpenChildFormAsync(new frmShowTransfers(), sender);
+        }
     }
 }
 
