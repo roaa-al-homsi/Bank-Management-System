@@ -403,7 +403,8 @@
             "Show Clients",
             "Manage Users",
             "Login Register",
-            "Transaction"});
+            "Transaction",
+            "Transfers Register"});
             this.checkedListBox1.Location = new System.Drawing.Point(712, 455);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(230, 140);

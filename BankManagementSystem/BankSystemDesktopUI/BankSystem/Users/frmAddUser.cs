@@ -129,7 +129,11 @@ namespace BankSystem.Users
                 _PermissionOnlyUser += (int)GlobalVariables.enMainMenuPermission.Transaction;
 
             }
+            else if (e.NewValue == CheckState.Checked && item == "Transfers Register")
+            {
+                _PermissionOnlyUser += (int)GlobalVariables.enMainMenuPermission.Transfers;
 
+            }
             else
             {
                 _PermissionOnlyUser = 0;

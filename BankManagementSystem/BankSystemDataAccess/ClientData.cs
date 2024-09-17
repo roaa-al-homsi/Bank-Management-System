@@ -203,5 +203,12 @@ namespace BankSystemDataAccess
             return GenericData.All("select * from View_Transaction;");
         }
 
+        static public DataTable Transfers()
+        {
+            return GenericData.All("select * from View_TransferDetails;");
+
+        }
+
+
     }
 }

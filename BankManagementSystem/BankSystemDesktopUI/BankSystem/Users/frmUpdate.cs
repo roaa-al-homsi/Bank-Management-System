@@ -159,7 +159,11 @@ namespace BankSystem.Users
                 _PermissionOnlyUser += (int)GlobalVariables.enMainMenuPermission.Transaction;
 
             }
+            else if (e.NewValue == CheckState.Checked && item == "Transfers Register")
+            {
+                _PermissionOnlyUser += (int)GlobalVariables.enMainMenuPermission.Transfers;
 
+            }
             else
             {
                 _PermissionOnlyUser = 0;
@@ -168,16 +172,14 @@ namespace BankSystem.Users
 
         private void _GetNamesOptionAllowedFromUserPermission(int User_Permission)
         {
-            int[] arrPermission = { 1, 2, 4, 8, 16, 32, 64, 128 };
+            int[] arrPermission = { 1, 2, 4, 8, 16, 32, 64, 128, 256 };
             for (short i = 1; i <= arrPermission.Length; i++)
             {
                 if (GlobalVariables.CheckAccessPermission(User_Permission, (GlobalVariables.enMainMenuPermission)arrPermission[i - 1]))
                 {
                     checkedListBox1.SetItemChecked(i - 1, true);
                 }
-
             }
-
         }
 
         private void txtBoxLetters_KeyPress(object sender, KeyPressEventArgs e)

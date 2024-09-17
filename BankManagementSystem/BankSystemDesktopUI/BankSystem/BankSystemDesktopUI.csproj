@@ -108,6 +108,12 @@
     <Compile Include="Transaction\frmDeposit.Designer.cs">
       <DependentUpon>frmDeposit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Transaction\frmShowTransfers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmShowTransfers.Designer.cs">
+      <DependentUpon>frmShowTransfers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Transaction\frmTransactions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     </Compile>
     <EmbeddedResource Include="Transaction\frmDeposit.resx">
       <DependentUpon>frmDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\frmShowTransfers.resx">
+      <DependentUpon>frmShowTransfers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transaction\frmTransactions.resx">
       <DependentUpon>frmTransactions.cs</DependentUpon>

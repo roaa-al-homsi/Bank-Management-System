@@ -245,6 +245,15 @@ namespace BankSystemBusiness
 
         }
 
+        static public DataTable Transfers()
+        {
+            return ClientData.Transfers();
+
+        }
+
+
+
+
     }
 }
 
