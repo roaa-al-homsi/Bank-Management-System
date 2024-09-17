@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBankSystem", "..\Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemGlobalVariables", "..\SystemGlobalVariables\SystemGlobalVariables.csproj", "{2068D7C4-6F26-4E30-ABF7-04D568877499}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankSystemValidation", "..\Validation\BankSystemValidation.csproj", "{C6708A99-B4F1-43B7-B88A-5FAD40739ABB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,10 +39,6 @@ Global
 		{2068D7C4-6F26-4E30-ABF7-04D568877499}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2068D7C4-6F26-4E30-ABF7-04D568877499}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2068D7C4-6F26-4E30-ABF7-04D568877499}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C6708A99-B4F1-43B7-B88A-5FAD40739ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C6708A99-B4F1-43B7-B88A-5FAD40739ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C6708A99-B4F1-43B7-B88A-5FAD40739ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C6708A99-B4F1-43B7-B88A-5FAD40739ABB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

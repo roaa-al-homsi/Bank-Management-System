@@ -37,7 +37,14 @@ namespace BankSystem.Clients
         private void btnAdd_Click(object sender, System.EventArgs e)
         {
             Client client = _CreateClientAndFillIt();
-            client.Save();
+            if (client.Save())
+            {
+                MessageBox.Show("Add Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Failed Successfully", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

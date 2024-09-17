@@ -73,7 +73,14 @@ namespace BankSystem.Users
             _User.Password = txtPassword.Text;
             _User.ImagePath = (picboxUser != null) ? picboxUser.ImageLocation : null;
 
-            _User.Save();
+            if (_User.Save())
+            {
+                MessageBox.Show("Add Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Failed Successfully", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             _BackDefaultControls();
         }
 

@@ -92,6 +92,10 @@ namespace BankSystemDataAccess
 
         }
 
+        static public bool Exist(string UserName)
+        {
+            return GenericData.Exist("select found=1 from Users where UserName=@UserName", "@UserName", UserName);
+        }
 
         static public int Add(string UserName, string Password, int Permission, int PersonId)
         {
@@ -149,26 +153,15 @@ namespace BankSystemDataAccess
 
         }
 
-        //static public bool Delete(int Id)
-        //{
-        //    return GenericsData.Delete<int>("delete Users where Id=@Id", "@Id", Id);
-
-        //}
         static public bool Delete(string UserName)
         {
             return GenericData.Delete<string>("delete Users where UserName=@UserName", "@UserName", UserName);
 
         }
-        //static public int GetPersonIdByUserID(int UserId)
-        //{
-
-        //   return GenericsData.GetPersonId<int>("select PersonId from Users where Id=@Id;", "@Id", UserId);
-
-        //}
 
         static public int GetPersonIdByUserName(string UserName)
         {
-            return GenericData.GetPersonId<string>("select PersonId from Users where UserName=@UserName;", "@UserName", UserName);
+            return GenericData.GetPersonIdOrClientId<string>("select PersonId from Users where UserName=@UserName;", "@UserName", UserName);
         }
 
         static public DataTable All()

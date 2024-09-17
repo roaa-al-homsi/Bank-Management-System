@@ -119,7 +119,7 @@
             this.txtUserName.Size = new System.Drawing.Size(230, 36);
             this.txtUserName.TabIndex = 36;
             this.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtUserName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxLetters_KeyPress);
+            this.txtUserName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLettersNumbers_KeyPress);
             // 
             // txtPhone
             // 

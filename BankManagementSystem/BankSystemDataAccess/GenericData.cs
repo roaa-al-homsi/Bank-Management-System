@@ -24,7 +24,7 @@ namespace BankSystemDataAccess
 
         }
 
-        static public int GetPersonId<T>(string query, string ParameterName, T ParameterValue)
+        static public int GetPersonIdOrClientId<T>(string query, string ParameterName, T ParameterValue)
         {
             int PersonID = 0;
             SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
@@ -117,6 +117,24 @@ namespace BankSystemDataAccess
 
             return IsFind;
 
+        }
+
+        static public bool Exist<T>(string query, string ParameterName, T ParameterValue)
+        {
+            bool IsFound = false;
+            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue(ParameterName, ParameterValue);
+            try
+            {
+                connection.Open();
+                SqlDataReader Reader = command.ExecuteReader();
+                IsFound = Reader.HasRows;
+                Reader.Close();
+            }
+            catch (Exception ex) { }
+            finally { connection.Close(); }
+            return IsFound;
         }
 
     }

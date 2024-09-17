@@ -38,7 +38,15 @@ namespace BankSystem.Clients
             if (MessageBox.Show("Are you sure delete this client?", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.OK)
             {
                 int ClientID = (int)dgvAllClients.CurrentRow.Cells[0].Value;
-                Client.Delete(ClientID);
+
+                if (Client.Delete(ClientID))
+                {
+                    MessageBox.Show("Delete Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Delete Failed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 _RefreshClientsList();
             }
         }

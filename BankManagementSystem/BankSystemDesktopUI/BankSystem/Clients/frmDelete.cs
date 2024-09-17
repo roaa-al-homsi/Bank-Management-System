@@ -59,7 +59,14 @@ namespace BankSystem.Clients
         {
             if (MessageBox.Show("Are you sure delete this client?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
-                Client.Delete(txtSearchAccountNum.Text);
+                if (Client.Delete(txtSearchAccountNum.Text))
+                {
+                    MessageBox.Show("Delete Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Delete Failed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 _BackDefaultControls();
             }
             else
