@@ -1,6 +1,0 @@
-C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\Validation\bin\Debug\Validation.dll
-C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\Validation\bin\Debug\Validation.pdb
-C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\Validation\obj\Debug\BankSystemValidation.csproj.AssemblyReference.cache
-C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\Validation\obj\Debug\BankSystemValidation.csproj.CoreCompileInputs.cache
-C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\Validation\obj\Debug\Validation.dll
-C:\Users\Ruaa\source\repos\BankManagementSystem\BankSystemDesktopUI\Validation\obj\Debug\Validation.pdb
