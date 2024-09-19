@@ -1,4 +1,5 @@
 ﻿using BankSystemBusiness;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace BankSystem.Clients
@@ -93,7 +94,14 @@ namespace BankSystem.Clients
                 e.Handled = true;
             }
         }
-
+        private void txtEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char[] allowedChars = { '@', '.', '-', '_', '+' };
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !allowedChars.Contains(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
 
     }
 }

@@ -92,7 +92,7 @@ namespace BankSystem.Clients
             }
             else
             {
-                MessageBox.Show("Failed Successfully", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Failed Update", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             _BackDefaultControls();

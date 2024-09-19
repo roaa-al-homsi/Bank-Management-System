@@ -31,19 +31,19 @@ namespace BankSystem.Transaction
         private void cmsDeposit_Click(object sender, EventArgs e)
         {
             string AccountNumber = (string)dgvTransaction.CurrentRow.Cells[1].Value;
-            _frmMainMenu._OpenChildFormAsync(new frmDeposit(AccountNumber));
+            _frmMainMenu.OpenChildFormAsync(new frmDeposit(AccountNumber));
         }
 
         private void cmsWithdraw_Click(object sender, EventArgs e)
         {
             string AccountNumber = (string)dgvTransaction.CurrentRow.Cells[1].Value;
-            _frmMainMenu._OpenChildFormAsync(new frmWithdraw(AccountNumber));
+            _frmMainMenu.OpenChildFormAsync(new frmWithdraw(AccountNumber));
         }
 
         private void cmsTransfer_Click(object sender, EventArgs e)
         {
             string AccountNumber = (string)dgvTransaction.CurrentRow.Cells[1].Value;
-            _frmMainMenu._OpenChildFormAsync(new frmTransfer(AccountNumber));
+            _frmMainMenu.OpenChildFormAsync(new frmTransfer(AccountNumber));
         }
     }
 }
