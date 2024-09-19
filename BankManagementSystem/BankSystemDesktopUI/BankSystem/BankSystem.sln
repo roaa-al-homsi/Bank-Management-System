@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankSystemBusiness", "..\..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankSystemDataAccess", "..\..\BankSystemDataAccess\BankSystemDataAccess.csproj", "{A6CEC8D6-7DEF-45CF-B1E0-248C47273006}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBankSystem", "..\ConsoleBankSystem\ConsoleBankSystem.csproj", "{C47DE23E-FF9D-41AC-9595-606B6E65E7F8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemGlobalVariables", "..\SystemGlobalVariables\SystemGlobalVariables.csproj", "{2068D7C4-6F26-4E30-ABF7-04D568877499}"
 EndProject
 Global
@@ -31,10 +29,6 @@ Global
 		{A6CEC8D6-7DEF-45CF-B1E0-248C47273006}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6CEC8D6-7DEF-45CF-B1E0-248C47273006}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6CEC8D6-7DEF-45CF-B1E0-248C47273006}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C47DE23E-FF9D-41AC-9595-606B6E65E7F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C47DE23E-FF9D-41AC-9595-606B6E65E7F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C47DE23E-FF9D-41AC-9595-606B6E65E7F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C47DE23E-FF9D-41AC-9595-606B6E65E7F8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2068D7C4-6F26-4E30-ABF7-04D568877499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2068D7C4-6F26-4E30-ABF7-04D568877499}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2068D7C4-6F26-4E30-ABF7-04D568877499}.Release|Any CPU.ActiveCfg = Release|Any CPU
