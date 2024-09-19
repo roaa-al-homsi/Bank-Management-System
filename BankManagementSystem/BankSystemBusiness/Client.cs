@@ -157,7 +157,12 @@ namespace BankSystemBusiness
 
         public bool ReadyClient()
         {
-            if (Exist(this.AccountNumber) || this.Salary <= 0 || this.PinCode == null || this.PersonId == 0)
+            if (_Mode == enMode.AddNew && Exist(this.AccountNumber))
+            {
+                return false;
+            }
+
+            if (this.Salary <= 0 || this.PinCode == null || this.PersonId == 0)
             {
                 return false;
             }

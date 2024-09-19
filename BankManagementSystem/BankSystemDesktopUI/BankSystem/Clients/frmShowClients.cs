@@ -30,7 +30,7 @@ namespace BankSystem.Clients
         private void toolStripMenuItem1_Click(object sender, System.EventArgs e)
         {
             string AccountNumber = (string)dgvAllClients.CurrentRow.Cells[7].Value;
-            _frmMainMenu._OpenChildFormAsync(new frmUpdate(AccountNumber));
+            _frmMainMenu.OpenChildFormAsync(new frmUpdate(AccountNumber));
         }
 
         private void toolStripMenuItem2_Click(object sender, System.EventArgs e)

@@ -227,7 +227,7 @@
             this.txtEmail.Size = new System.Drawing.Size(257, 42);
             this.txtEmail.TabIndex = 12;
             this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxLetters_KeyPress);
+            this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmail_KeyPress);
             // 
             // txtPhone
             // 

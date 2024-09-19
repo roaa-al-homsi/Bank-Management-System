@@ -26,7 +26,7 @@ namespace BankSystem.Users
         private void uToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string UserName = (string)dgvAllUsers.CurrentRow.Cells[1].Value;
-            _frmMainMenu._OpenChildFormAsync(new frmUpdate(UserName));
+            _frmMainMenu.OpenChildFormAsync(new frmUpdate(UserName));
 
         }
 
@@ -44,7 +44,7 @@ namespace BankSystem.Users
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            _frmMainMenu._OpenChildFormAsync(new frmAddUser());
+            _frmMainMenu.OpenChildFormAsync(new frmAddUser());
         }
     }
 }

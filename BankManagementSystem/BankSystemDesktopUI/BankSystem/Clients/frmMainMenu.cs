@@ -24,37 +24,26 @@ namespace BankSystem.Clients
         {
             if (btnSender != null)
             {
-                if (_currentButton != (Guna2Button)btnSender)
+                if (_currentButton != null)
                 {
-                    _DisableMenuButton();
-                    _currentButton = (Guna2Button)btnSender;
-                    _currentButton.BackColor = Color.White;
-                    _currentButton.ForeColor = Color.FromArgb(53, 41, 123);
-                    _currentButton.Font = new System.Drawing.Font("Segoe UI", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    _currentButton.BackColor = Color.FromArgb(53, 41, 123);
+                    _currentButton.ForeColor = Color.White;
+                    _currentButton.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
+
+                _currentButton = (Guna2Button)btnSender;
+                _currentButton.BackColor = Color.White;
+                _currentButton.ForeColor = Color.FromArgb(53, 41, 123);
+                _currentButton.Font = new System.Drawing.Font("Segoe UI", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             }
         }
 
-        private void _DisableMenuButton()
+        public void OpenChildFormAsync(Form childForm, object btnSender)
         {
-            Guna2Button gunaButton = new Guna2Button();
-
-            foreach (Control previousBtn in panelMainMenu.Controls)
+            if (_activeForm != null)
             {
-                if (previousBtn.GetType() == typeof(Guna2Button))
-                {
-                    gunaButton = (Guna2Button)previousBtn;
-
-                    previousBtn.BackColor = Color.FromArgb(53, 41, 123);
-                    previousBtn.ForeColor = Color.White;
-                    previousBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                }
+                _activeForm.Close();
             }
-        }
-
-        public void _OpenChildFormAsync(Form childForm, object btnSender)
-        {
-            _activeForm?.Close();
 
             _ActivateButton(btnSender);
             _activeForm = childForm;
@@ -69,7 +58,6 @@ namespace BankSystem.Clients
             if (childForm.Tag != null)
             {
                 btnTitle.Text = childForm.Tag.ToString();
-
             }
             else
             {
@@ -77,9 +65,12 @@ namespace BankSystem.Clients
             }
         }
 
-        public void _OpenChildFormAsync(Form childForm)
+        public void OpenChildFormAsync(Form childForm)
         {
-            _activeForm?.Close();
+            if (_activeForm != null)
+            {
+                _activeForm.Close();
+            }
             _activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -92,19 +83,20 @@ namespace BankSystem.Clients
             if (childForm.Tag != null)
             {
                 btnTitle.Text = childForm.Tag.ToString();
-
             }
             else
             {
                 btnTitle.Text = childForm.Text;
             }
         }
+
         private void _MessageAccessDenied()
         {
             MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
                      "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 
         }
+
         private void btnShowClients_Click(object sender, EventArgs e)
         {
             if (!GlobalVariables.CheckAccessPermission(GlobalVariables.enMainMenuPermission.ShowClients))
@@ -113,7 +105,7 @@ namespace BankSystem.Clients
                 return;
             }
             btnTitle.Image = btnShowClients.Image;
-            _OpenChildFormAsync(new frmShowClients(this), sender);
+            OpenChildFormAsync(new frmShowClients(this), sender);
         }
 
         private void btnAddNew_Click(object sender, EventArgs e)
@@ -124,7 +116,7 @@ namespace BankSystem.Clients
                 return;
             }
             btnTitle.Image = btnAddNew.Image;
-            _OpenChildFormAsync(new frmAdd(), sender);
+            OpenChildFormAsync(new frmAdd(), sender);
         }
 
         private void btnFindClient_Click(object sender, EventArgs e)
@@ -135,7 +127,7 @@ namespace BankSystem.Clients
                 return;
             }
             btnTitle.Image = btnFindClient.Image;
-            _OpenChildFormAsync(new frmFind(), sender);
+            OpenChildFormAsync(new frmFind(), sender);
         }
 
         private void btnUpdateClient_Click(object sender, EventArgs e)
@@ -146,7 +138,7 @@ namespace BankSystem.Clients
                 return;
             }
             btnTitle.Image = btnUpdateClient.Image;
-            _OpenChildFormAsync(new frmUpdate(), sender);
+            OpenChildFormAsync(new frmUpdate(), sender);
         }
 
         private void btnDeleteClient_Click(object sender, EventArgs e)
@@ -157,7 +149,7 @@ namespace BankSystem.Clients
                 return;
             }
             btnTitle.Image = btnDeleteClient.Image;
-            _OpenChildFormAsync(new frmDelete(), sender);
+            OpenChildFormAsync(new frmDelete(), sender);
         }
 
         private void btnManageUser_Click(object sender, EventArgs e)
@@ -168,7 +160,7 @@ namespace BankSystem.Clients
                 return;
             }
             btnTitle.Image = btnManageUser.Image;
-            _OpenChildFormAsync(new frmMainManageUsers(this), sender);
+            OpenChildFormAsync(new frmMainManageUsers(this), sender);
         }
 
         private void frmMainMenu_Load(object sender, EventArgs e)
@@ -198,7 +190,7 @@ namespace BankSystem.Clients
                 return;
             }
             btnTitle.Image = btnLoginRegisters.Image;
-            _OpenChildFormAsync(new frmLoginRegisters(), sender);
+            OpenChildFormAsync(new frmLoginRegisters(), sender);
 
         }
 
@@ -210,7 +202,7 @@ namespace BankSystem.Clients
                 return;
             }
             btnTitle.Image = btnTransaction.Image;
-            _OpenChildFormAsync(new frmTransactions(this), sender);
+            OpenChildFormAsync(new frmTransactions(this), sender);
         }
 
         private void btnShowTransfer_Click(object sender, EventArgs e)
@@ -221,7 +213,7 @@ namespace BankSystem.Clients
                 return;
             }
             btnTitle.Image = btnShowTransfer.Image;
-            _OpenChildFormAsync(new frmShowTransfers(), sender);
+            OpenChildFormAsync(new frmShowTransfers(), sender);
         }
     }
 }
