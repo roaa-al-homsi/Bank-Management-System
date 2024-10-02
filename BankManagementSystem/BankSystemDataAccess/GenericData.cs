@@ -68,57 +68,6 @@ namespace BankSystemDataAccess
             return dt;
         }
 
-        static public bool GetClient<T1, T2>(string query, string ParameterName, T1 ParameterValue, ref T2 IdOrAcc, string NameIdOrAcc, ref string FirstName,
-           ref string LastName, ref int PersonId, ref string PhoneNumber, ref string Email, ref string PinCode,
-           ref double Salary, ref DateTime DateBirth, ref string ImagePath)
-        {
-            bool IsFind = false;
-            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
-
-            SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue(ParameterName, ParameterValue);
-
-            try
-            {
-                connection.Open();
-                SqlDataReader reader = command.ExecuteReader();
-                if (reader.Read())
-                {
-                    IsFind = true;
-
-                    FirstName = (string)reader["FirstName"];
-                    LastName = (string)reader["LastName"];
-                    PhoneNumber = (string)reader["PhoneNumber"];
-                    Email = (string)reader["Email"];
-                    PinCode = (string)reader["PinCode"];
-                    IdOrAcc = (T2)reader[NameIdOrAcc];
-                    PersonId = (int)reader["PersonID"];
-                    DateBirth = (DateTime)reader["BirthDate"];
-                    Salary = Convert.ToDouble(reader["Salary"]);
-
-
-                    if (reader["ImagePath"] != DBNull.Value)
-                    {
-                        ImagePath = (string)reader["ImagePath"];
-                    }
-                    else
-                    {
-                        ImagePath = "";
-                    }
-                }
-                else
-                { IsFind = false; }
-
-                reader.Close();
-
-            }
-            catch (Exception ex) { IsFind = false; }
-            finally { connection.Close(); }
-
-            return IsFind;
-
-        }
-
         static public bool Exist<T>(string query, string ParameterName, T ParameterValue)
         {
             bool IsFound = false;

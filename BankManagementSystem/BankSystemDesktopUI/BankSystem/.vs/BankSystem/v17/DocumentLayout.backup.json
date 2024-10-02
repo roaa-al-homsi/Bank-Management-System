@@ -1,12 +1,52 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDesktopUI\\BankSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A6CEC8D6-7DEF-45CF-B1E0-248C47273006}|..\\..\\BankSystemDataAccess\\BankSystemDataAccess.csproj|c:\\users\\ruaa\\source\\repos\\bankmanagementsystem\\banksystemdataaccess\\clientdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6CEC8D6-7DEF-45CF-B1E0-248C47273006}|..\\..\\BankSystemDataAccess\\BankSystemDataAccess.csproj|c:\\users\\ruaa\\source\\repos\\bankmanagementsystem\\banksystemdataaccess\\genericdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GenericData.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDataAccess\\GenericData.cs",
+              "RelativeDocumentMoniker": "..\\..\\BankSystemDataAccess\\GenericData.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDataAccess\\GenericData.cs \u2B24",
+              "RelativeToolTip": "..\\..\\BankSystemDataAccess\\GenericData.cs \u2B24",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAHcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T19:54:07.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientData.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDataAccess\\ClientData.cs",
+              "RelativeDocumentMoniker": "..\\..\\BankSystemDataAccess\\ClientData.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\BankManagementSystem\\BankSystemDataAccess\\ClientData.cs \u2B24",
+              "RelativeToolTip": "..\\..\\BankSystemDataAccess\\ClientData.cs \u2B24",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAACUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T20:24:41.168Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,7 @@ namespace SystemGlobalVariables
     static public class GlobalVariables
     {
 
-        public static User CurrentUser = User.Find("", "");
+        public static User CurrentUser = User.Find(null, null);
         [Flags]
         public enum enMainMenuPermission { AddClient = 1, FindClient = 2, DeleteClient = 4, UpdateClient = 8, ShowClients = 16, ManageUsers = 32, LoginRegister = 64, Transaction = 128, Transfers = 256 };
 

@@ -12,9 +12,51 @@ namespace BankSystemDataAccess
             ref double Salary, ref DateTime DateBirth, ref string ImagePath)
         {
 
-            return GenericData.GetClient<string, int>
-          ("select * from View_ClientDetails where AccountNumber = @AccountNumber;", "@AccountNumber", AccountNumber, ref Id, "ClientID", ref FirstName, ref LastName, ref PersonId, ref PhoneNumber, ref Email, ref PinCode, ref Salary, ref DateBirth, ref ImagePath);
+            bool IsFind = false;
+            SqlConnection connection = new SqlConnection(SettingsData.ConnectionString);
 
+            string query = @"select * from View_ClientDetails where AccountNumber = @AccountNumber;";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    IsFind = true;
+
+                    FirstName = (string)reader["FirstName"];
+                    LastName = (string)reader["LastName"];
+                    PhoneNumber = (string)reader["PhoneNumber"];
+                    Email = (string)reader["Email"];
+                    PinCode = (string)reader["PinCode"];
+                    Id = (int)reader["ClientID"];
+                    PersonId = (int)reader["PersonID"];
+                    DateBirth = (DateTime)reader["BirthDate"];
+                    Salary = Convert.ToDouble(reader["Salary"]);
+
+
+                    if (reader["ImagePath"] != DBNull.Value)
+                    {
+                        ImagePath = (string)reader["ImagePath"];
+                    }
+                    else
+                    {
+                        ImagePath = "";
+                    }
+                }
+                else
+                { IsFind = false; }
+
+                reader.Close();
+
+            }
+            catch (Exception ex) { IsFind = false; }
+            finally { connection.Close(); }
+
+            return IsFind;
         }
 
 

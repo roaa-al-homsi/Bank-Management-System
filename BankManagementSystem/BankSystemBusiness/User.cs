@@ -112,10 +112,12 @@ namespace BankSystemBusiness
         }
         public bool ReadyUser()
         {
-            if (Exist(this.UserName) || this.Password == null)
+
+            if ((_Mode == enMode.Add) && (Exist(this.UserName) || string.IsNullOrWhiteSpace(this.Password)))
             {
                 return false;
             }
+
 
             if (base.FirstName == null || base.LastName == null || base.Email == null || base.PhoneNumber == null || base.BirthDate == null)
             {
