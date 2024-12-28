@@ -30,8 +30,12 @@ The **Bank Management System** is a desktop application designed to streamline b
 
 ---
 
+
 ## Technology Stack
 - **Programming Language**: C#
 - **Framework**: .NET Framework 
 - **Database**: SQL Server
 - **UI Framework**: Windows Forms / WPF
+
+  [Watch the demo on YouTube](https://www.youtube.com/watch?v=your-video-id)
+
